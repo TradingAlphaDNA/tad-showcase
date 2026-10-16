@@ -2,6 +2,10 @@
 
 **Understand your strategies, per-stock results and capital efficiency.**
 
+**Under active development · Demo available on request · Planned distribution: shareware**
+
+Pricing and usage terms are not yet announced. The public website, PDFs and screenshots provide a product introduction; a product demo is available on request.
+
 TAD is a local application for reviewing stock and options trading. It brings supported broker exports into account, stock and strategy views, helping individual investors understand their positions, costs and trading results.
 
 This repository presents the product and selected engineering decisions from an AI-assisted software project. The application source remains private. All demonstration screenshots use wholly synthetic data.
