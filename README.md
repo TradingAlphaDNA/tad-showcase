@@ -16,13 +16,21 @@ Pricing and usage terms are not yet announced.
 - **Data architecture & curation:** Designed extensible, layered data models with user review and traceable corrections to improve data quality and support additional brokers and analyses.
 - **AI-native development:** Built and iterated the application, coordinating specialized AI agents for implementation, code review, testing, and release.
 
-**Application stack:** Python · Decimal · SQLite · JavaScript/CSS.
+## Application architecture
+
+| Layer | Implementation |
+| --- | --- |
+| Backend | Python services and deterministic financial rules, with Decimal arithmetic for monetary calculations |
+| Data | Layered broker records, normalized trade data and derived analysis; traceable user curation and SQLite revision history |
+| Frontend | HTML, CSS and plain JavaScript browser views, served by the local application |
+
+AI agents support development and review. The application runs locally without a model or API key; deterministic rules produce its financial results.
 
 ![TAD holdings view with wholly synthetic data](assets/screenshots/tad-product-holdings.jpg)
 
 *Actual product screen: remaining positions, costs and unrealized P/L at a saved price. The displayed amounts are artificial demonstration values, not investment performance claims.*
 
-This repository presents public product materials and selected engineering decisions. The application source remains private.
+**Public showcase:** Product pages, screenshots, PDFs and selected engineering explanations are published here. The full application source remains private.
 
 ## Explore the project
 
@@ -55,7 +63,7 @@ Users can review supported transaction exports from Chase, Moomoo and E*TRADE, i
 
 ## Engineering in brief
 
-The application combines a Python backend with `Decimal` financial arithmetic, SQLite revision and application history, and native JavaScript/CSS browser views. It runs locally without a model or API key. AI assisted implementation and review; deterministic rules produce the financial results.
+The application combines a Python backend with `Decimal` financial arithmetic, SQLite revision and application history, and plain JavaScript/CSS browser views. It runs locally without a model or API key. AI assisted implementation and review; deterministic rules produce the financial results.
 
 The [engineering case study](docs/engineering-case-study.md) explains the choices behind incomplete-result handling, repeat imports, supported corrections, source-based rebuilding and workspace recovery.
 
