@@ -2,6 +2,10 @@
 
 **Turning broker exports into understandable stock and options analysis.**
 
+**Under active development · Demo available on request · Planned distribution: shareware**
+
+Pricing and usage terms are not yet announced. The public website, PDFs and screenshots provide a product introduction; a product demo is available on request.
+
 [Product introduction](../TADIntro.en.pdf) · [中文介绍](../TADIntro.cn.pdf) · [Project overview](../README.md)
 
 TradingAlphaDNA (TAD) is a local trading-review application for individual investors working across supported Chase, Moomoo and E*TRADE transaction exports. Its product focus is strategy contributions, per-stock results and capital efficiency. This case study describes the private implementation behind the synthetic product demonstration; it does not publish the source code.
