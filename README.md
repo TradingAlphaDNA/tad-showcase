@@ -10,6 +10,12 @@ TAD is a local application for reviewing stock and options trading. It brings su
 
 This repository presents the product and selected engineering decisions from an AI-assisted software project. The application source remains private. All demonstration screenshots use wholly synthetic data.
 
+## Project highlights
+
+- **Product & financial logic:** Designed stock and options review workflows covering strategy contributions, per-stock P&L, trading costs, and capital efficiency.
+- **Data architecture & curation:** Designed extensible, layered data models with user review and traceable corrections to improve data quality and support additional brokers and analyses.
+- **AI-native development:** Built and iterated the application, coordinating specialized AI agents for implementation, code review, testing, and release.
+
 ## Explore the project
 
 | Start here | What you will find |
