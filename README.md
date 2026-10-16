@@ -2,13 +2,13 @@
 
 **Understand your strategies, per-stock results and capital efficiency.**
 
-**Under active development · Demo available on request · Planned distribution: shareware**
+TAD is a local application for reviewing stock and options trading across accounts, strategies and individual stocks.
 
-Pricing and usage terms are not yet announced. The public website, PDFs and screenshots provide a product introduction; a product demo is available on request.
+**Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
 
-TAD is a local application for reviewing stock and options trading. It brings supported broker exports into account, stock and strategy views, helping individual investors understand their positions, costs and trading results.
+[View product](https://tradingalphadna.github.io/tad-showcase/) · [Engineering case study](docs/engineering-case-study.md) · [Request a demo](mailto:hhuang68@gmail.com)
 
-This repository presents the product and selected engineering decisions from an AI-assisted software project. The application source remains private. All demonstration screenshots use wholly synthetic data.
+Pricing and usage terms are not yet announced.
 
 ## Project highlights
 
@@ -16,17 +16,25 @@ This repository presents the product and selected engineering decisions from an 
 - **Data architecture & curation:** Designed extensible, layered data models with user review and traceable corrections to improve data quality and support additional brokers and analyses.
 - **AI-native development:** Built and iterated the application, coordinating specialized AI agents for implementation, code review, testing, and release.
 
+**Application stack:** Python · Decimal · SQLite · JavaScript/CSS.
+
+![TAD holdings view with wholly synthetic data](assets/screenshots/tad-product-holdings.jpg)
+
+*Actual product screen: remaining positions, costs and unrealized P/L at a saved price. The displayed amounts are artificial demonstration values, not investment performance claims.*
+
+This repository presents public product materials and selected engineering decisions. The application source remains private.
+
 ## Explore the project
 
 | Start here | What you will find |
 | --- | --- |
 | [Bilingual product website](https://tradingalphadna.github.io/tad-showcase/) | Browse the product introduction directly; select **中文** for Chinese |
-| [English product introduction](TADIntro.en.pdf) | A four-page overview with actual product screens |
-| [中文版产品介绍](TADIntro.cn.pdf) | 四页中文介绍：策略表现、个股盈亏与资金效率 |
-| [Bilingual HTML introduction](index.html) | Product capabilities and expandable screenshots; select **中文** for Chinese |
+| [English PDF download](https://github.com/TradingAlphaDNA/tad-showcase/releases/download/showcase-v1.0.1/TADIntro.en.pdf) | A four-page overview with actual product screens |
+| [中文 PDF 下载](https://github.com/TradingAlphaDNA/tad-showcase/releases/download/showcase-v1.0.1/TADIntro.cn.pdf) | 四页中文介绍：策略表现、个股盈亏与资金效率 |
+| [Offline HTML download](https://github.com/TradingAlphaDNA/tad-showcase/releases/download/showcase-v1.0.1/TADIntro.html) | Download the bilingual introduction; keep both PDFs alongside it |
 | [Engineering case study](docs/engineering-case-study.md) | Architecture, financial correctness, recovery and validation tradeoffs |
 
-The product website opens directly in your browser. GitHub's file view displays the HTML as source. To read it offline, download this repository and open `index.html`; keep the two PDFs beside it for the download links to work.
+For offline reading, download the HTML and both PDFs above into the same folder, then open `TADIntro.html`.
 
 ## The questions TAD helps answer
 
@@ -35,10 +43,6 @@ The product website opens directly in your browser. GitHub's file view displays 
 - **Capital:** What did a trade cost, how long was capital used, and which return or efficiency measures can be established?
 
 Users can review supported transaction exports from Chase, Moomoo and E*TRADE, inspect holdings and trade chains, and move from a result to the related trades. Support depends on the export format and available transaction history.
-
-![TAD holdings view with wholly synthetic data](assets/screenshots/tad-product-holdings.jpg)
-
-*Actual product screen: remaining positions, costs and unrealized P/L at a saved price. The displayed amounts are artificial demonstration values, not investment performance claims.*
 
 <details>
 <summary>More product screens: overview and trade review</summary>
