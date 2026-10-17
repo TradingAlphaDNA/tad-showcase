@@ -1,14 +1,26 @@
 # TradingAlphaDNA (TAD)
 
-**Understand your strategies, per-stock results and capital efficiency.**
+**See what your stock and options trades actually earned.**
 
-TAD is a local application for reviewing stock and options trading across accounts, strategies and individual stocks.
+Your broker lists transactions and positions. But when a stock holding, option trades and several accounts are involved, the questions get harder: How do the gains and losses add up? How much capital did they use, and for how long?
 
-**Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
+TAD connects related trading records so investors can review profit and loss, returns and capital use by account, stock and strategy.
 
-[View product](https://tradingalphadna.github.io/tad-showcase/) · [Engineering case study](docs/engineering-case-study.md) · [Request a demo](mailto:hhuang68@gmail.com)
+[See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
 
-Pricing and usage terms are not yet announced.
+## Who it is for
+
+Investors who actively manage stocks and options, especially across brokerage accounts or through strategies such as covered calls, cash-secured puts, PMCC and LEAPS. If you already piece together broker records in a spreadsheet to understand your trades, TAD addresses that work.
+
+## You collected the call premium. How did the whole trade perform?
+
+The stock can lose more than the premium earned. A useful review brings the stock and option results into view together, then asks how much capital was committed and for how long.
+
+TAD lets you follow related trades and inspect their contributions. Some strategies currently show only part of the result; those gaps are marked beside the analysis.
+
+![TAD holdings view with wholly synthetic data](assets/screenshots/tad-product-holdings.jpg)
+
+*Actual product screen using artificial demonstration data.*
 
 ## Project highlights
 
@@ -16,61 +28,30 @@ Pricing and usage terms are not yet announced.
 - **Data architecture & curation:** Designed extensible, layered data models with user review and traceable corrections to improve data quality and support additional brokers and analyses.
 - **AI-native development:** Built and iterated the application, coordinating specialized AI agents for implementation, code review, testing, and release.
 
-## Application architecture
+The project began with a practical trading-review problem and grew into a working local application: broker-data import, trade reconstruction, strategy identification and analysis. The [engineering case study](docs/engineering-case-study.md) explains the product decisions, implementation and validation behind it.
 
-| Layer | Implementation |
-| --- | --- |
-| Backend | Python services and deterministic financial rules, with Decimal arithmetic for monetary calculations |
-| Data | Layered broker records, normalized trade data and derived analysis; traceable user curation and SQLite revision history |
-| Frontend | HTML, CSS and plain JavaScript browser views, served by the local application |
+## Explore TAD
 
-AI agents support development and review. The application runs locally without a model or API key; deterministic rules produce its financial results.
+- [Bilingual product introduction](https://tradingalphadna.github.io/tad-showcase/) — choose **中文** for Chinese.
+- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf).
+- [Latest downloadable presentation](https://github.com/TradingAlphaDNA/tad-showcase/releases/latest) — introduction materials, not an application installer.
+- [Engineering case study](docs/engineering-case-study.md).
 
-![TAD holdings view with wholly synthetic data](assets/screenshots/tad-product-holdings.jpg)
+## How it works
 
-*Actual product screen: remaining positions, costs and unrealized P/L at a saved price. The displayed amounts are artificial demonstration values, not investment performance claims.*
+Import supported transaction exports from Chase, moomoo or E*TRADE, review the connected trades and holdings, and explore results by account, stock or strategy. Support varies by export format and available history.
 
-**Public showcase:** Product pages, screenshots, PDFs and selected engineering explanations are published here. The full application source remains private.
+The application runs on your computer without a model or API key. Financial calculations use Python rules and Decimal arithmetic. The interface uses HTML, CSS and JavaScript; SQLite retains application and correction history. AI tools assist development and review.
 
-## Explore the project
+## Availability and use
 
-| Start here | What you will find |
-| --- | --- |
-| [Bilingual product website](https://tradingalphadna.github.io/tad-showcase/) | Browse the product introduction directly; select **中文** for Chinese |
-| [English PDF download](https://github.com/TradingAlphaDNA/tad-showcase/releases/download/showcase-v1.0.1/TADIntro.en.pdf) | A four-page overview with actual product screens |
-| [中文 PDF 下载](https://github.com/TradingAlphaDNA/tad-showcase/releases/download/showcase-v1.0.1/TADIntro.cn.pdf) | 四页中文介绍：策略表现、个股盈亏与资金效率 |
-| [Offline HTML download](https://github.com/TradingAlphaDNA/tad-showcase/releases/download/showcase-v1.0.1/TADIntro.html) | Download the bilingual introduction; keep both PDFs alongside it |
-| [Engineering case study](docs/engineering-case-study.md) | Architecture, financial correctness, recovery and validation tradeoffs |
+**Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
 
-For offline reading, download the HTML and both PDFs above into the same folder, then open `TADIntro.html`.
+Pricing and usage terms are not yet announced. This public repository contains product presentations, synthetic screenshots and selected engineering explanations. The full application source remains private. Publishing these materials does not release the application as open-source software or grant an application-use license.
 
-## The questions TAD helps answer
+## Current limitations
 
-- **Strategy:** Which traded strategies contributed gains or losses?
-- **Stock:** How do stock trades, related options and dividends contribute to one security's result?
-- **Capital:** What did a trade cost, how long was capital used, and which return or efficiency measures can be established?
+Some historical strategy results are incomplete. A short-call premium alone does not describe the whole CC or PMCC trade. Return and capital-efficiency figures show their calculation basis and period.
 
-Users can review supported transaction exports from Chase, Moomoo and E*TRADE, inspect holdings and trade chains, and move from a result to the related trades. Support depends on the export format and available transaction history.
+Prices are saved observations, not live quotes. General statement-PDF extraction, automated trading and a multiuser cloud service are outside the demonstrated scope.
 
-<details>
-<summary>More product screens: overview and trade review</summary>
-
-![TAD overview with wholly synthetic data](assets/screenshots/tad-product-overview.jpg)
-
-![TAD trade review with wholly synthetic data](assets/screenshots/tad-product-trades.jpg)
-
-</details>
-
-## Engineering in brief
-
-The application combines a Python backend with `Decimal` financial arithmetic, SQLite revision and application history, and plain JavaScript/CSS browser views. It runs locally without a model or API key. AI assisted implementation and review; deterministic rules produce the financial results.
-
-The [engineering case study](docs/engineering-case-study.md) explains the choices behind incomplete-result handling, repeat imports, supported corrections, source-based rebuilding and workspace recovery.
-
-## Current boundaries
-
-Results retain their scope: period realized profit, current unrealized P/L and complete-trade ROI are different measures. Short-Call income may be only one contribution to a covered-call or PMCC strategy; supporting-asset P/L is separate. Missing information stays visible, rather than becoming zero.
-
-The preview does not promise complete historical returns for every strategy or whole-account growth. Prices are saved observations, not live quotes. General statement-PDF extraction, automated trading and a multiuser cloud service are outside the demonstrated scope.
-
-The private application baseline has passed its CI checks. That validation belongs to the private implementation; this presentation repository does not distribute or execute the application test suite.
