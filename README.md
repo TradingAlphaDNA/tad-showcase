@@ -43,6 +43,12 @@ Import supported transaction exports from Chase, moomoo or E*TRADE, review the c
 
 The application runs on your computer without a model or API key. Financial calculations use Python rules and Decimal arithmetic. The interface uses HTML, CSS and JavaScript; SQLite retains application and correction history. AI tools assist development and review.
 
+### Help improve TAD
+
+Does TAD address a problem you face when trading options? If you’d like to help us improve it, email us at **[hhuang68@gmail.com](mailto:hhuang68@gmail.com)**. We’ll follow up to learn about your needs and discuss how we can help.
+
+Please don’t include account details or trading records in your initial email.
+
 ## Availability and use
 
 **Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
