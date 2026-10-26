@@ -28,6 +28,7 @@ body:
     attributes:
       label: Result / 结果
       options:
+        - "Not yet tested / 尚未测试"
         - "Passed / 通过"
         - "Blocked by installation or security prompt / 安装或系统提示受阻"
         - "Import or update issue / 读入或更新问题"
