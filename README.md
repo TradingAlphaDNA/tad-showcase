@@ -8,6 +8,22 @@ TAD connects related trading records so investors can review profit and loss, re
 
 [See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
 
+## Mac technical preview · Mac 公开测试
+
+**[Download 1.1.0-alpha.1](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1) · [English guide](docs/testing/README.en.md) · [中文说明](docs/testing/README.zh.md) · [Report a test result](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml)**
+
+**Ad-hoc signed · NOT notarized / 临时签名，尚未公证.** macOS may block first launch; record the warning and contact the project. Do not disable system protections to run this preview.
+
+| Coverage | Scope |
+| --- | --- |
+| Planned / 计划支持 | Apple Silicon M1 and later M-series; release macOS 15, 26 and 27 |
+| Verified / 已实测 | Development Mac on macOS 15.2; constructed cases and independent same-Mac review |
+| Pending / 待验证 | Test users’ own Macs, Finder installation and browser-download/security prompts |
+
+No Git, Python, Node or private repository access is required. The download includes the unchanged application **1.1.0-tester-review.1**, synthetic broker files, bilingual instructions and a test checklist. Start with those samples in a new personal environment. [Preview evaluation notice](docs/testing/TESTING-NOTICE.md).
+
+This is a public prerelease, not a promise that every target chip/OS combination works. Share only sanitized feedback; keep account details, broker originals and backups out of public issues. **公开预发布，用户环境兼容结果仍待反馈；请勿公开账户资料或券商原件。**
+
 ## Who it is for
 
 Investors who actively manage stocks and options, especially across brokerage accounts or through strategies such as covered calls, cash-secured puts, PMCC and LEAPS. If you already piece together broker records in a spreadsheet to understand your trades, TAD addresses that work.
@@ -34,7 +50,7 @@ The project began with a practical trading-review problem and grew into a workin
 
 - [Bilingual product introduction](https://tradingalphadna.github.io/tad-showcase/) — choose **中文** for Chinese.
 - [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf).
-- [Latest downloadable presentation](https://github.com/TradingAlphaDNA/tad-showcase/releases/latest) — introduction materials, not an application installer.
+- [Latest downloadable presentation](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/showcase-v1.0.2) — introduction materials, not an application installer.
 - [Engineering case study](docs/engineering-case-study.md).
 
 ## How it works
@@ -53,11 +69,10 @@ Please don’t include account details or trading records in your initial email.
 
 **Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
 
-Pricing and usage terms are not yet announced. This public repository contains product presentations, synthetic screenshots and selected engineering explanations. The full application source remains private. Publishing these materials does not release the application as open-source software or grant an application-use license.
+Pricing and usage terms are not yet announced. This public repository contains product presentations, synthetic screenshots and selected engineering explanations. The full application source remains private. The showcase does not release the application as open-source software. Local evaluation of the published technical preview is described in its [evaluation notice](docs/testing/TESTING-NOTICE.md); future general usage and pricing terms are not yet announced.
 
 ## Current limitations
 
 Some historical strategy results are incomplete. A short-call premium alone does not describe the whole CC or PMCC trade. Return and capital-efficiency figures show their calculation basis and period.
 
 Prices are saved observations, not live quotes. General statement-PDF extraction, automated trading and a multiuser cloud service are outside the demonstrated scope.
-
