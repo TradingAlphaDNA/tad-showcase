@@ -24,6 +24,16 @@ No Git, Python, Node or private repository access is required. The download incl
 
 This is a public prerelease, not a promise that every target chip/OS combination works. Share only sanitized feedback; keep account details, broker originals and backups out of public issues. **公开预发布，用户环境兼容结果仍待反馈；请勿公开账户资料或券商原件。**
 
+### Importing broker data / 券商数据导入
+
+**[Supported files and limits](docs/testing/broker-support.en.md) · [Export the right files](docs/testing/broker-export.en.md) · [Evaluate your own data](docs/testing/personal-data.en.md)**
+
+**[中文支持矩阵](docs/testing/broker-support.zh.md) · [中文导出指南](docs/testing/broker-export.zh.md) · [真实数据上手](docs/testing/personal-data.zh.md)**
+
+Moomoo, Chase / J.P. Morgan **investment accounts**, and E*TRADE have independent Connectors for specific CSV layouts. Start with the supplied synthetic cases; optional personal-data evaluation uses a **separate fresh environment** and the online guide. Broker name alone does not guarantee compatibility. PDF statements are archive-only in the ordinary upload flow; a generic TAD import Connector/template is **not yet available**.
+
+**Archived ≠ applied; applied ≠ fully reconciled. / 已归档不等于已应用，已应用不等于全部对账通过。** Check account, date coverage, opening holdings/cash and unresolved items before interpreting results. The support matrix separates implemented readers, actual test evidence and pending real-file compatibility. Existing ZIPs and attached guides remain the unchanged synthetic acceptance kit; these online guides add the personal-data route without a binary rebuild.
+
 ## Who it is for
 
 Investors who actively manage stocks and options, especially across brokerage accounts or through strategies such as covered calls, cash-secured puts, PMCC and LEAPS. If you already piece together broker records in a spreadsheet to understand your trades, TAD addresses that work.

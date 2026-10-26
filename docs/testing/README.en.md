@@ -1,5 +1,8 @@
 # TAD — public technical preview for your Mac
 
+**Two separate paths:** this page and the unchanged download kit describe synthetic acceptance. After that passes, optional local personal-data evaluation is described in the [personal-data guide](personal-data.en.md). Check the [supported broker files](broker-support.en.md) and [export instructions](broker-export.en.md) first. Do not mix synthetic and personal accounts in the same environment. The synthetic-only instructions below remain applicable to the acceptance exercise; they are not a claim that the app rejects supported real files.
+
+
 Distribution: **1.1.0-alpha.1 public technical preview**. Bundled application: **1.1.0-tester-review.1**, unchanged from the accepted local build. Installation on a test user's Mac has NOT yet been verified.
 
 Download: https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1

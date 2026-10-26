@@ -1,5 +1,8 @@
 # TAD——在你的 Mac 上试用公开技术预览
 
+**两条独立路径：**本页和未改动的下载套件用于合成验收；通过后可按[真实数据上手](personal-data.zh.md)自愿在本机试用个人文件，先看[支持矩阵](broker-support.zh.md)和[导出指南](broker-export.zh.md)。合成与个人账户分开环境。下文“仅合成／不使用真实文件”针对合成验收任务，不表示程序拒绝支持的真实文件。
+
+
 分发版本：**1.1.0-alpha.1 公开技术预览**。包内应用版本为 **1.1.0-tester-review.1**，保持已验收原包不变。测试用户 Mac 的独立安装验收仍**尚未完成**。
 
 下载：https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1
