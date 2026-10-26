@@ -1,0 +1,56 @@
+name: Technical preview feedback / 测试反馈
+description: Report an installation, broker import, analysis or usability result without personal data.
+title: "[Preview] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a PUBLIC report. Do not include broker originals, account numbers, personal backups, keys, passwords or logs with private paths. Use the supplied synthetic cases first.
+        这是公开反馈，请勿附券商原件、账户号、个人备份、密码、密钥或含个人路径的日志。优先使用合成案例。
+        Ad-hoc signed, NOT notarized. Planned macOS 15/26/27 support is not a test-user certification. Record security alerts; do not disable protections.
+  - type: input
+    id: version
+    attributes:
+      label: Preview and app version / 测试套件与应用版本
+      placeholder: "Kit 1.1.0-alpha.1; app 1.1.0-tester-review.1"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Mac chip and exact macOS version / 芯片与系统版本
+      description: "Apple menu > About This Mac. No serial number or device identifier. / 关于本机；不要填写序列号或设备标识。"
+      placeholder: "M2, macOS 26.x; Safari/Chrome version if relevant"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result / 结果
+      options:
+        - "Passed / 通过"
+        - "Blocked by installation or security prompt / 安装或系统提示受阻"
+        - "Import or update issue / 读入或更新问题"
+        - "Analysis or cash qualification question / 分析或现金核验疑问"
+        - "Usability feedback / 使用体验"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result / 操作步骤与预期
+      description: "Say whether you used the supplied synthetic case. / 说明是否使用附带合成案例。"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result / 实际结果
+      description: "Include the exact sanitized alert or a sanitized screenshot. Never attach private records. / 可附脱敏提示或截图，不要附私人记录。"
+    validations:
+      required: true
+  - type: textarea
+    id: retention
+    attributes:
+      label: Restart and retained data check / 重启及资料保留
+      description: "Did the synthetic documents, draft and display setting survive? If not tested, say not tested. / 合成文档、草稿、显示设置是否保留？未测请注明。"
