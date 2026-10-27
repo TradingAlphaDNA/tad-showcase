@@ -1,0 +1,119 @@
+{
+  "release": "1.1.0-alpha.1",
+  "application": "1.1.0-tester-review.1",
+  "binary_sha256": "05ada9e72632211ae4fa3977c2feeae931d62c8b2fc8f16317bc5f679ffa9387",
+  "synthetic_only": true,
+  "snapshot_date": "2026-10-26",
+  "notes": "Raw 1280x720 native browser captures; no generated UI, no edited numbers. Suggested crop rectangles below are nondestructive placement instructions for PDF/HTML only; preserve all raw captures. Do not portray a matched-subset rate as account return or assert PMCC ownership.",
+  "shots": [
+    {
+      "key": "overview",
+      "crop": {
+        "en": [
+          194,
+          361,
+          1047,
+          338
+        ],
+        "zh": [
+          194,
+          361,
+          1047,
+          338
+        ]
+      },
+      "caption_en": "Current public app, wholly synthetic accounts. USD 560 known realized income and USD 1,750 saved unrealized P/L. Capital rates apply only to the matched realized subset, not account return. Saved date: 2026-10-26.",
+      "caption_zh": "当前公开包、全合成账户：已知已实现收益560美元，保存浮盈1750美元；资金指标仅对应匹配的已实现子集，不是账户回报。保存日期2026-10-26。",
+      "sha256": {
+        "en": "841079dc4e9c38c647baed098043b63db30eaa773765255de4a601a09af100dc",
+        "zh": "90d02e953ad5bb49638abd201a439b1c3f9226e6c9e1fbe04536ae5e15f99bdf"
+      },
+      "public_files": {
+        "en": "assets/screenshots/tad-alpha1-overview.en.jpg",
+        "zh": "assets/screenshots/tad-alpha1-overview.zh.jpg"
+      }
+    },
+    {
+      "key": "holdings",
+      "crop": {
+        "en": [
+          194,
+          84,
+          1047,
+          480
+        ],
+        "zh": [
+          194,
+          84,
+          1047,
+          480
+        ]
+      },
+      "caption_en": "SYN security summary, wholly synthetic: USD 500 realized and USD 1,050 saved unrealized P/L across stock and options. Displayed return metrics use matched realizations, excluding current unrealized P/L; they are not a whole-security or account return. Trade details continue below this cropped view.",
+      "caption_zh": "SYN个股汇总、全合成资料：股票和期权合计已实现500美元、保存浮盈1050美元。所示回报指标仅用匹配的已实现收益，不计当前浮盈，不是整个标的或账户的回报。交易明细在此局部视图下方。",
+      "sha256": {
+        "en": "ee82b6e1c59faba68564ccf47d9bc3a5a78cf7993278a688a36f50d2c67e82ee",
+        "zh": "394a6efe3a0e981791e11d19287f33306835ffdf0efcaf70560db17bdb5e0bce"
+      },
+      "editorial_note": "Return scope clarification from material author; original pixel values unchanged.",
+      "public_files": {
+        "en": "assets/screenshots/tad-alpha1-holdings.en.jpg",
+        "zh": "assets/screenshots/tad-alpha1-holdings.zh.jpg"
+      }
+    },
+    {
+      "key": "closed_trade",
+      "crop": {
+        "en": [
+          280,
+          195,
+          963,
+          410
+        ],
+        "zh": [
+          280,
+          201,
+          963,
+          410
+        ]
+      },
+      "caption_en": "CLOSE, a wholly synthetic completed stock trade: USD 3,000 purchase cost, USD 60 before-fee profit, 2.00% before-fee return, held 6 calendar days. Complete after-fee results are not established; this is not account return or a performance promise.",
+      "caption_zh": "CLOSE全合成已闭环股票交易：买入成本3000美元，费用前收益60美元，费用前回报2.00%，持有6个自然日；完整费用后结果尚未建立，不是账户回报或收益承诺。",
+      "sha256": {
+        "en": "407ec9b1d9ccb975780f1441db99d7e636da6a0f56a5320abad0c4ebea5fa243",
+        "zh": "43a30ee8c6af8247b52f47a4adb9919e64eddbd1f9665b7044c617f30d9b706a"
+      },
+      "public_files": {
+        "en": "assets/screenshots/tad-alpha1-closed-trade.en.jpg",
+        "zh": "assets/screenshots/tad-alpha1-closed-trade.zh.jpg"
+      }
+    },
+    {
+      "key": "option_time",
+      "crop": {
+        "en": [
+          194,
+          92,
+          1047,
+          540
+        ],
+        "zh": [
+          194,
+          92,
+          1047,
+          510
+        ]
+      },
+      "caption_en": "Wholly synthetic DEMO long Call: recorded cost USD 4,500, saved unrealized P/L USD 500, 452 DTE and 24 days held as of 2026-10-26. This single-leg saved valuation is not a paired PMCC return; support eligibility remains under review.",
+      "caption_zh": "DEMO全合成长期Call：已记录成本4500美元，保存浮盈500美元，截至2026-10-26剩余452天、已持有24天；这是单腿保存估值，不是配对PMCC回报，支撑资格仍需核对。",
+      "sha256": {
+        "en": "5ee0af4b9d07ef409255547c0d9eb2172fd5cd8fb504eeedf078a82d14ac6839",
+        "zh": "9069a8c0254bf7ef96a029ec43cc1a157900761f46487853ab28e42cf5353d61"
+      },
+      "public_files": {
+        "en": "assets/screenshots/tad-alpha1-option-time.en.jpg",
+        "zh": "assets/screenshots/tad-alpha1-option-time.zh.jpg"
+      }
+    }
+  ]
+}

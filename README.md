@@ -10,7 +10,7 @@ Your broker lists transactions and positions. But when a stock holding, option t
 
 TAD connects related trading records so investors can review profit and loss, returns and capital use by account, stock and strategy.
 
-[See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
+[Download the Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1) · [See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
 
 ## Mac technical preview · Mac 公开测试
 
@@ -48,9 +48,9 @@ The stock can lose more than the premium earned. A useful review brings the stoc
 
 TAD lets you follow related trades and inspect their contributions. Some strategies currently show only part of the result; those gaps are marked beside the analysis.
 
-![TAD holdings view with wholly synthetic data](assets/screenshots/tad-product-holdings.jpg)
+![Current public TAD overview with wholly synthetic data](assets/screenshots/tad-alpha1-overview.en.jpg)
 
-*Actual product screen using artificial demonstration data.*
+*Actual public test kit 1.1.0-alpha.1 (app 1.1.0-tester-review.1), constructed accounts and saved prices dated 2026-10-26. Known realized income USD 560 and saved unrealized P/L USD 1,750 are separate; matched capital rates are not whole-account returns. [Capture scope](assets/screenshots/README.md).*
 
 ## Project highlights
 
@@ -63,8 +63,8 @@ The project began with a practical trading-review problem and grew into a workin
 ## Explore TAD
 
 - [Bilingual product introduction](https://tradingalphadna.github.io/tad-showcase/) — choose **中文** for Chinese.
-- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf).
-- [Latest downloadable presentation](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/showcase-v1.0.2) — introduction materials, not an application installer.
+- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf) — updated 2026-10-26 to match the current public technical preview.
+- [Earlier presentation archive](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/showcase-v1.0.2) — introduction materials, not an application installer.
 - [Engineering case study](docs/engineering-case-study.md).
 
 ## How it works
@@ -81,7 +81,7 @@ Please don’t include account details or trading records in your initial email.
 
 ## Availability and use
 
-**Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
+**Public Mac technical preview available · Under active development · [Demo available on request](mailto:hhuang68@gmail.com) · Planned distribution: shareware**
 
 Pricing and usage terms are not yet announced. This public repository contains product presentations, synthetic screenshots and selected engineering explanations. The full application source remains private. The showcase does not release the application as open-source software. Local evaluation of the published technical preview is described in its [evaluation notice](docs/testing/TESTING-NOTICE.md); future general usage and pricing terms are not yet announced.
 
