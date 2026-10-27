@@ -1,5 +1,8 @@
 # Export the right broker files
 
+> **Your broker data stays on your computer.** In the current local TAD app, broker files and account data are imported, processed and saved on your own computer—not uploaded to a TAD cloud service. The interface's “Upload” action submits files to the app running on your computer. Sharing anything yourself through public feedback, email or an external service is a separate action.
+
+
 [中文](broker-export.zh.md) · [Support matrix](broker-support.en.md) · [Import your own data](personal-data.en.md)
 
 These are **report-selection and output checks for this TAD build**. Broker

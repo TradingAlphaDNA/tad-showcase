@@ -5,6 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        Broker files are imported into the local TAD app on your computer, not the cloud. This PUBLIC feedback form is separate; do not send personal data here.
+        券商文件导入本机 TAD，不上传云端；此公开反馈表是另外的分享入口，不要在此发送私人数据。
         This is a PUBLIC report. Do not include broker originals, account numbers, personal backups, keys, passwords or logs with private paths. Use the supplied synthetic cases first. Optional personal-data evaluation: see the online personal-data guide; never attach real rows or balances.
         这是公开反馈，请勿附券商原件、账户号、个人备份、密码、密钥或含个人路径的日志。优先使用合成案例；个人文件试用见在线指南，不附真实交易行或余额。
         Ad-hoc signed, NOT notarized. Planned macOS 15/26/27 support is not a test-user certification. Record security alerts; do not disable protections.

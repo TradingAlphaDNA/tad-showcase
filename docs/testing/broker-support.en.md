@@ -1,5 +1,8 @@
 # Supported broker files — 1.1.0-alpha.1
 
+> **Your broker data stays on your computer.** In the current local TAD app, broker files and account data are imported, processed and saved on your own computer—not uploaded to a TAD cloud service. The interface's “Upload” action submits files to the app running on your computer. Sharing anything yourself through public feedback, email or an external service is a separate action.
+
+
 [中文](broker-support.zh.md) · [Export guide](broker-export.en.md) · [Use your own data](personal-data.en.md) · [Install and synthetic checks](README.en.md)
 
 **Support means the specific file layouts below, not every export from a broker.**
