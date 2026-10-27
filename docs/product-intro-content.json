@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-26",
+  "kit_version": "1.1.0-alpha.1",
+  "app_version": "1.1.0-tester-review.1",
+  "links": {
+    "release": "https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1",
+    "guide_en": "https://github.com/TradingAlphaDNA/tad-showcase/blob/main/docs/testing/README.en.md",
+    "guide_zh": "https://github.com/TradingAlphaDNA/tad-showcase/blob/main/docs/testing/README.zh.md",
+    "support_en": "https://github.com/TradingAlphaDNA/tad-showcase/blob/main/docs/testing/broker-support.en.md",
+    "support_zh": "https://github.com/TradingAlphaDNA/tad-showcase/blob/main/docs/testing/broker-support.zh.md",
+    "feedback": "https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml",
+    "contact": "mailto:hhuang68@gmail.com",
+    "org": "https://github.com/TradingAlphaDNA",
+    "case_study": "https://github.com/TradingAlphaDNA/tad-showcase/blob/main/docs/engineering-case-study.md",
+    "notice": "https://github.com/TradingAlphaDNA/tad-showcase/blob/main/docs/testing/TESTING-NOTICE.md"
+  },
+  "en": {
+    "language": "ENGLISH",
+    "eyebrow": "FOR INVESTORS WHO MANAGE STOCKS & OPTIONS",
+    "title": "See what your stock\nand options trades\nactually earned.",
+    "intro": "Your broker lists transactions and positions. TAD connects related records so you can review gains, losses and capital use across accounts, stocks and strategies.",
+    "audience": "Built for investors who already piece together broker screens and spreadsheets to understand their trades.",
+    "privacy_title": "Your broker data stays on your computer.",
+    "privacy": "Import, save and analyze locally. The current TAD app does not upload your broker files or account data to a TAD cloud service.",
+    "privacy_detail": "The interface's Upload action sends files to the app on your computer. Information you choose to share through feedback, email or another service is a separate action.",
+    "short_cta": "Download the Mac technical preview or request a demo.",
+    "questions": [
+      [
+        "STRATEGIES",
+        "What contributed to P/L?"
+      ],
+      [
+        "EACH STOCK",
+        "How do the trades add up?"
+      ],
+      [
+        "CAPITAL",
+        "How much, and for how long?"
+      ]
+    ],
+    "p2_eyebrow": "STRATEGIES + INDIVIDUAL STOCKS",
+    "p2_title": "Find the contributors.\nThen follow the trades.",
+    "p2_intro": "Start with the result that matters to you. Compare strategy contributions or bring a stock and its related options into one review.",
+    "strategy_title": "By strategy",
+    "strategy_body": "Compare stock and option contributions, including supported LEAPS and CC. Explore PMCC support through long-Call and short-Call records. Confirmed relationships and complete strategy returns depend on the available evidence.",
+    "stock_title": "By stock",
+    "stock_body": "Bring stock transactions and related options together. Find open holdings and closed trades, then inspect the gains, losses and costs behind each result.",
+    "scope_title": "A call premium is only part of the story.",
+    "scope_body": "A stock or long Call can lose more than the short Call earns. Read the supporting asset alongside the short leg; some strategy results remain partial. TAD marks those gaps beside the analysis.",
+    "p3_eyebrow": "THE TRADE BEHIND THE NUMBER",
+    "p3_title": "Follow each trade,\nfrom entry onward.",
+    "p3_intro": "Follow open, partly closed and closed trades. See recorded entry costs, dates, remaining holdings and realized results where the records support them.",
+    "measures": [
+      [
+        "01",
+        "Profit and loss",
+        "Separate realized results from unrealized P/L at the displayed saved price and date. Prices are saved observations, not live quotes."
+      ],
+      [
+        "02",
+        "Return on the trade",
+        "Check the included legs, period and cost basis. A whole-trade return needs a complete lifecycle and sufficient cost evidence."
+      ],
+      [
+        "03",
+        "Capital and time",
+        "Check which trades and dates each capital-use or efficiency figure covers. A matched subset is not an account return, and short-Call income is not the complete CC or PMCC return."
+      ]
+    ],
+    "p4_eyebrow": "TRY THE PUBLIC TECHNICAL PREVIEW",
+    "p4_title": "Bring your questions.\nStart with the samples.",
+    "p4_intro": "Download the Mac preview with synthetic broker files and bilingual guides. No Git, Python, Node, model account or API key is required. You can also request a demo.",
+    "download": "Download Mac preview",
+    "guide": "Read the guide",
+    "feedback": "Share test feedback",
+    "demo": "Request a demo",
+    "support_title": "Broker files, with a defined scope",
+    "support_body": "Specific USD CSV layouts from Moomoo, Chase / J.P. Morgan investment accounts and E*TRADE. Compatibility depends on the report and available history. Ordinary statement upload archives PDFs; it does not extract or reconcile their contents.",
+    "platform_title": "Mac preview, not yet broadly verified",
+    "platform_body": "Planned: Apple Silicon M1+ and release macOS 15 / 26 / 27. Verified: development Mac on macOS 15.2, including independent same-Mac review. Test-user Macs remain unverified. Ad-hoc signed; NOT notarized. Do not disable system protections to run it.",
+    "personal": "Begin with synthetic samples. After those checks pass, use the online guide for optional personal-data evaluation in a separate fresh environment. Keep account details and broker originals out of public feedback.",
+    "not_yet": "Not yet available: Windows, a generic import template, general PDF extraction, live quotes or knowledge-based trade-management guidance.",
+    "highlights_title": "A working product. An AI development case study.",
+    "highlights": [
+      [
+        "Product & financial logic",
+        "Designed stock and options review workflows covering strategy contributions, per-stock P&L, trading costs, and capital efficiency."
+      ],
+      [
+        "Data architecture & curation",
+        "Designed extensible, layered data models with user review and traceable corrections to improve data quality and support additional brokers and analyses."
+      ],
+      [
+        "AI-native development",
+        "Built and iterated the application, coordinating specialized AI agents for implementation, code review, testing, and release."
+      ]
+    ],
+    "terms": "Under development; planned proprietary shareware. Pricing and future terms are not announced. Application source remains private. Preview use follows the Release evaluation notice; this presentation grants no application license.",
+    "contact_line": "Questions or a demo: hhuang68@gmail.com",
+    "screen_note": "Actual current-release UI. Wholly synthetic demonstration data."
+  },
+  "zh": {
+    "language": "中文",
+    "eyebrow": "为自己管理股票与期权的投资者而设计",
+    "title": "看清股票和期权交易，\n到底赚了多少。",
+    "intro": "券商列出了成交与持仓，但相关交易的结果仍不容易看清。TAD 把记录连接起来，帮助你按账户、个股和策略复盘盈亏与资金使用。",
+    "audience": "适合已经在券商页面和表格之间来回整理、想弄清自己交易结果的投资者。",
+    "privacy_title": "券商数据留在你的电脑上。",
+    "privacy": "在本机导入、保存和分析。当前 TAD 本地应用不会把券商文件或账户数据上传到 TAD 云端。",
+    "privacy_detail": "界面中的“上传”是把文件交给本机运行的程序；你自行通过反馈、邮件或其他服务分享信息，是另外的动作。",
+    "short_cta": "可下载 Mac 公开技术预览，也可申请演示。",
+    "questions": [
+      [
+        "策略",
+        "哪些做法贡献了盈亏？"
+      ],
+      [
+        "个股",
+        "相关交易合起来怎样？"
+      ],
+      [
+        "资金",
+        "用了多少、用了多久？"
+      ]
+    ],
+    "p2_eyebrow": "策略 + 个股",
+    "p2_title": "找到收益来源，\n再看背后的交易。",
+    "p2_intro": "从你关心的结果出发：比较不同策略的贡献，或把一只股票与相关期权放在一起复盘。",
+    "strategy_title": "从策略看",
+    "strategy_body": "比较股票与期权的收益贡献，包括有记录依据的 LEAPS 和 CC。联系长期 Call 与短 Call，查看 PMCC 支撑情况；关系确认和完整策略回报取决于现有依据。",
+    "stock_title": "从个股看",
+    "stock_body": "联系股票交易和相关期权，找到仍在持仓与已经平仓的交易，进一步查看各项结果背后的盈利、亏损和成本。",
+    "scope_title": "收到 Call 权利金，只是故事的一部分。",
+    "scope_body": "股票或长期 Call 的亏损可能超过短 Call 收益。结合支撑资产回看短腿；部分策略结果仍不完整，缺项会在分析旁标明。",
+    "p3_eyebrow": "数字背后的交易过程",
+    "p3_title": "跟随每笔交易，\n看清成本与结果。",
+    "p3_intro": "跟随未平仓、部分平仓与已平仓交易，查看记录支持的建仓成本、日期、剩余持仓和已实现结果。",
+    "measures": [
+      [
+        "01",
+        "盈亏",
+        "把已实现结果与浮盈亏分开看。浮盈亏对应界面标注的保存报价和日期，不是实时行情。"
+      ],
+      [
+        "02",
+        "交易回报",
+        "查看纳入的交易腿、期间和成本依据。整笔交易回报需要完整的生命周期与充分的成本记录。"
+      ],
+      [
+        "03",
+        "资金与时间",
+        "先看占资和效率指标覆盖哪些交易与日期。匹配子集不代表整个账户的回报；短 Call 收益也不代表完整 CC 或 PMCC 回报。"
+      ]
+    ],
+    "p4_eyebrow": "试用公开技术预览",
+    "p4_title": "带着你的问题，\n从合成案例开始。",
+    "p4_intro": "Mac 预览套件提供合成券商文件和中英文指南，无需 Git、Python、Node、模型账号或 API Key。也可以先申请演示。",
+    "download": "下载 Mac 预览",
+    "guide": "查看试用指南",
+    "feedback": "反馈试用结果",
+    "demo": "申请演示",
+    "support_title": "券商支持有明确的文件范围",
+    "support_body": "支持 Moomoo、Chase / J.P. Morgan 投资账户与 E*TRADE 的特定美元 CSV 格式，兼容性取决于报告类型和历史记录。普通上传中的 statement PDF 仅归档，不会自动提取内容或完成对账。",
+    "platform_title": "Mac 预览，尚未广泛验证",
+    "platform_body": "计划支持 Apple Silicon M1+ 和 macOS 15 / 26 / 27 正式版。目前仅在 macOS 15.2 开发机验证，含同机独立审阅；测试用户 Mac 尚待验证。临时签名，尚未公证；请勿为运行它关闭系统保护。",
+    "personal": "先试合成案例。检查通过后，可按在线指南在独立新环境中本地试用个人数据。公开反馈不要附账户资料或券商原件。",
+    "not_yet": "本版尚未提供：Windows、通用导入模板、通用 PDF 提取、实时行情或基于交易知识的管理指导。",
+    "highlights_title": "可用产品，也是 AI 项目落地案例。",
+    "highlights": [
+      [
+        "产品与金融逻辑",
+        "设计股票和期权复盘流程，涵盖策略贡献、个股盈亏、交易成本与资金效率。"
+      ],
+      [
+        "数据架构与整理",
+        "设计可扩展的分层数据模型，通过用户审阅与可追溯修正改善数据质量，支撑更多券商和分析。"
+      ],
+      [
+        "AI 原生开发",
+        "通过专业 AI agents 协作完成实施、代码审阅、测试与发布，持续构建和迭代应用。"
+      ]
+    ],
+    "terms": "持续开发中，计划采用专有 shareware 模式，价格和未来条款尚未公布。应用源码保持私有。预览试用遵循 Release 评估说明；本介绍材料不授予应用许可。",
+    "contact_line": "咨询或申请演示：hhuang68@gmail.com",
+    "screen_note": "当前公开版本的真实界面，全部使用合成演示数据。"
+  }
+}
