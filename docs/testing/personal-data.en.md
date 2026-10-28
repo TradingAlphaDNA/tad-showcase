@@ -169,3 +169,7 @@ possible; if those pass but your report does not, preserve the original locally.
 
 Documentation cannot clear a parser, coverage or analysis defect. Record that as
 pending system work; do not repeatedly re-upload files or invent missing values.
+
+## Standard CSV for another broker
+
+Use the [Standard CSV guide](standard-import.en.md). TAD accepts this explicit contract in alpha.2; it does not automatically understand arbitrary broker files or validate AI mapping truth. Retain the actual account and unknown facts, and review before explicit apply.

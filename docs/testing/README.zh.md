@@ -6,11 +6,11 @@
 **两条独立路径：**本页和未改动的下载套件用于合成验收；通过后可按[真实数据上手](personal-data.zh.md)自愿在本机试用个人文件，先看[支持矩阵](broker-support.zh.md)和[导出指南](broker-export.zh.md)。合成与个人账户分开环境。下文“仅合成／不使用真实文件”针对合成验收任务，不表示程序拒绝支持的真实文件。
 
 
-分发版本：**1.1.0-alpha.1 公开技术预览**。包内应用版本为 **1.1.0-tester-review.1**，保持已验收原包不变。测试用户 Mac 的独立安装验收仍**尚未完成**。
+分发版本：**1.1.0-alpha.2 公开技术预览**。包内应用版本为 **1.1.0-alpha.2**，已纳入验收通过的标准CSV导入及共享核心改进。测试用户 Mac 的独立安装验收仍**尚未完成**。
 
-下载：https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1
+下载：https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2
 反馈：https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml
-应用保持 1.1.0-tester-review.1 原包，Apple Silicon arm64，目前只在开发机
+应用已升级为 1.1.0-alpha.2，Apple Silicon arm64，目前只在开发机
 macOS 15.2 验收。首轮**兼容性目标**为 Apple Silicon M1 及后续 M 系列，
 搭配 macOS 15（Sequoia）、26（Tahoe）、27（Golden Gate）正式版。
 这是计划覆盖范围，不是所有芯片／系统组合均已认证，也不是市场占有率结论。
@@ -36,12 +36,12 @@ TAD 仍在开发，计划 shareware，源码私有；本套件全部为合成数
 
 ## 1. 下载、核对并打开程序
 
-在 Release 页选择 **TAD-1.1.0-alpha.1-macOS-arm64-test-kit.zip**。GitHub 自动生成的 Source code ZIP/TAR 是 showcase 文档，不是应用。测试下载已包含合成资料和验收表；解压后继续下列步骤。
+在 Release 页选择 **TAD-1.1.0-alpha.2-macOS-arm64-test-kit.zip**。GitHub 自动生成的 Source code ZIP/TAR 是 showcase 文档，不是应用。测试下载已包含合成资料和验收表；解压后继续下列步骤。
 
 解压外层套件，打开 START-HERE.html 看中英文总说明。
 application/ 中是已验收的应用 ZIP，SHA256 应为：
 
-`2621bafd4ba65d2900d381f2484d7e5118fd9728ab0ec3b01f4e714bd9592ee7`
+`4a0c44f748802302223ca149672cf223e237f804518fdfec2d27fa8259400cb9`
 
 可选操作员校验：终端输入 `cd `，把解压后的套件目录拖入并回车，然后执行
 `shasum -a 256 -c SHA256SUMS`，各项应显示 OK。任何校验不符均停止。
@@ -158,3 +158,5 @@ https://support.apple.com/en-us/109033 。
 先在现有测试用户的目标范围内机器完成端到端验证；条件允许时用 M1／M2 及较低
 目标系统检查下限，再补较新系统。不为等待特定芯片阻止所有测试，也不要求用户
 为参加测试而更改现有系统版本。
+
+[标准CSV指南及两份模板](standard-import.zh.md)——alpha.2新增转换流水及持仓／CASH导入；旧alpha.1不兼容。

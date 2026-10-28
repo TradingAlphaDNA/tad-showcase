@@ -1,4 +1,4 @@
-# 券商文件支持范围——1.1.0-alpha.1
+# 券商文件支持范围——1.1.0-alpha.2
 
 > **券商数据留在你的电脑上。** 当前本地版 TAD 在你的电脑上导入、处理和保存券商文件与账户数据，不会上传到 TAD 云端。界面中的“上传”是把文件交给本机运行的程序；用户自行通过公开反馈、邮件或外部服务分享资料，是另外的动作。
 
@@ -6,7 +6,7 @@
 [English](broker-support.en.md) · [导出指南](broker-export.zh.md) · [真实数据上手](personal-data.zh.md) · [安装与合成测试](README.zh.md)
 
 **支持的是下列具体报表格式，不是该券商的所有导出文件。** 套件内应用为
-**1.1.0-tester-review.1**，已包含三家独立 Connector。首轮个人数据试用范围为
+**1.1.0-alpha.2**，已包含三家原生及 Standard CSV 独立 Connector。首轮个人数据试用范围为
 **USD 投资账户、股票与已支持格式的标准美股期权记录**；不凭券商名称承诺支持
 其他币种、地区、语言、产品或调整／非标准期权。不提供自动登录券商或自动同步。
 
@@ -17,10 +17,11 @@
 | Moomoo | 英文表头的订单／成交历史 CSV，保留成交明细和可提供的费用列 | 包含 `Symbol`、`Quantity`、`Current price`、`Average Cost`、`Market Value`、`Unrealized P/L`、`Currency` 的 CSV | 必须确认真实仓位日期；这类持仓文件不能单独证明现金余额，订单历史也不等于完整非交易现金流水。 |
 | Chase／J.P. Morgan 投资账户 | 完整 **31 列**投资交易 CSV，包含账户身份、日期、类型、证券描述、数量及 USD 金额 | 完整 **71 列**投资持仓 CSV，包含 `As of`、`Ticker`、`Quantity`、`Asset Class`、`Pricing Date` | 已实现损益 CSV 已有历史核对 Reader，但**不是**普通上传更新流程的第三类财务输入。支票、信用卡、商户流水不属于此格式。 |
 | E*TRADE | 带 `Account Activity for ...` 的 CSV，使用明确日期区间或支持的 Current Year／Prior Year 标题，保留完整 13 列交易表 | 完整 `View Summary - All Positions` CSV，带账户汇总、`Net Account Value`、持仓表及 `Generated at ... ET` | CASH 行是余额观察值；Cash Purchasing Power 不是现金；TOTAL 已含现金。筛选后的持仓表、缺账户或生成日期的表不属于可替代格式。 |
+| Standard CSV（转换／用户提供） | TAD.transactions.v1.csv | TAD.positions.v1.csv，CASH单列 | USD股票／标准100乘数美股期权；声明来源、精确账户身份，未知值和部分覆盖保持明确。[指南](standard-import.zh.md)。 |
 
 三家均保留券商原件，使用同一套核心重建和分析。文件识别成功后仍可能需要核对
 才能应用。把 XLSX／PDF 改成 CSV 后缀、翻译表头，或把其他券商伪装成 Moomoo
-文件，都不等于格式受支持。**本版尚无通用 TAD 导入 Connector／模板。**
+文件，都不等于格式受支持。**未支持券商可按[标准CSV Connector及模板](standard-import.zh.md)转换，不要伪装成原生券商格式。**
 
 ## 已实现、已验证和待验证分别是什么？
 

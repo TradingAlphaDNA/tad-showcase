@@ -89,5 +89,4 @@ Symbol,Last Price $,Change $,Change %,Quantity,Price Paid $,Day's Gain $,Total G
 不翻译表头、不伪装其他券商。** 必要时保存 TAD 草稿；公开反馈只提供券商、报表
 类型、平台、应用版本及脱敏错误／表头名，不附账户行、原件或含私人信息截图。
 
-本版没有公开通用导入模板。套件合成 CSV 是已支持券商格式示例，不是其他券商
-数据的转换指南。
+alpha.2为未支持券商提供[两份标准CSV模板及转换指南](standard-import.zh.md)。保留原件，映射明确记录，不伪装成其他券商。AI转换可选且在TAD外；云端AI是另行选择的数据传输。

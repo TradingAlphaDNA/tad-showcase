@@ -10,11 +10,11 @@ Your broker lists transactions and positions. But when a stock holding, option t
 
 TAD connects related trading records so investors can review profit and loss, returns and capital use by account, stock and strategy.
 
-[Download the Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1) · [See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
+[Download the Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2) · [See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
 
 ## Mac technical preview · Mac 公开测试
 
-**[Download 1.1.0-alpha.1](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1) · [English guide](docs/testing/README.en.md) · [中文说明](docs/testing/README.zh.md) · [Report a test result](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml)**
+**[Download 1.1.0-alpha.2](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2) · [English guide](docs/testing/README.en.md) · [中文说明](docs/testing/README.zh.md) · [Report a test result](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml)**
 
 **Ad-hoc signed · NOT notarized / 临时签名，尚未公证.** macOS may block first launch; record the warning and contact the project. Do not disable system protections to run this preview.
 
@@ -24,7 +24,7 @@ TAD connects related trading records so investors can review profit and loss, re
 | Verified / 已实测 | Development Mac on macOS 15.2; constructed cases and independent same-Mac review |
 | Pending / 待验证 | Test users’ own Macs, Finder installation and browser-download/security prompts |
 
-No Git, Python, Node or private repository access is required. The download includes the unchanged application **1.1.0-tester-review.1**, synthetic broker files, bilingual instructions and a test checklist. Start with those samples in a new personal environment. [Preview evaluation notice](docs/testing/TESTING-NOTICE.md).
+No Git, Python, Node or private repository access is required. The download includes the rebuilt application **1.1.0-alpha.2**, synthetic broker files, bilingual instructions and a test checklist. Start with those samples in a new personal environment. [Preview evaluation notice](docs/testing/TESTING-NOTICE.md).
 
 This is a public prerelease, not a promise that every target chip/OS combination works. Share only sanitized feedback; keep account details, broker originals and backups out of public issues. **公开预发布，用户环境兼容结果仍待反馈；请勿公开账户资料或券商原件。**
 
@@ -34,9 +34,9 @@ This is a public prerelease, not a promise that every target chip/OS combination
 
 **[中文支持矩阵](docs/testing/broker-support.zh.md) · [中文导出指南](docs/testing/broker-export.zh.md) · [真实数据上手](docs/testing/personal-data.zh.md)**
 
-Moomoo, Chase / J.P. Morgan **investment accounts**, and E*TRADE have independent Connectors for specific CSV layouts. Start with the supplied synthetic cases; optional personal-data evaluation uses a **separate fresh environment** and the online guide. Broker name alone does not guarantee compatibility. PDF statements are archive-only in the ordinary upload flow; a generic TAD import Connector/template is **not yet available**.
+Moomoo, Chase / J.P. Morgan **investment accounts**, and E*TRADE have independent Connectors for specific CSV layouts. Start with the supplied synthetic cases; optional personal-data evaluation uses a **separate fresh environment** and the online guide. Broker name alone does not guarantee compatibility. PDF statements are archive-only in the ordinary upload flow; **alpha.2 adds a Standard CSV Connector** for converted or user-supplied activity and positions/CASH. [Two templates and bilingual field guide](docs/standard-import/index.html).
 
-**Archived ≠ applied; applied ≠ fully reconciled. / 已归档不等于已应用，已应用不等于全部对账通过。** Check account, date coverage, opening holdings/cash and unresolved items before interpreting results. The support matrix separates implemented readers, actual test evidence and pending real-file compatibility. Existing ZIPs and attached guides remain the unchanged synthetic acceptance kit; these online guides add the personal-data route without a binary rebuild.
+**Archived ≠ applied; applied ≠ fully reconciled. / 已归档不等于已应用，已应用不等于全部对账通过。** Check account, date coverage, opening holdings/cash and unresolved items before interpreting results. The support matrix separates implemented readers, actual test evidence and pending real-file compatibility. The alpha.2 package, attached guides and templates are versioned together; alpha.1 remains available as an older release and cannot read the new templates.
 
 ## Who it is for
 
@@ -48,7 +48,7 @@ The stock can lose more than the premium earned. A useful review brings the stoc
 
 TAD lets you follow related trades and inspect their contributions. Some strategies currently show only part of the result; those gaps are marked beside the analysis.
 
-![Current public TAD overview with wholly synthetic data](assets/screenshots/tad-alpha1-overview.en.jpg)
+![TAD alpha.1 overview with wholly synthetic data](assets/screenshots/tad-alpha1-overview.en.jpg)
 
 *Actual public test kit 1.1.0-alpha.1 (app 1.1.0-tester-review.1), constructed accounts and saved prices dated 2026-10-26. Known realized income USD 560 and saved unrealized P/L USD 1,750 are separate; matched capital rates are not whole-account returns. [Capture scope](assets/screenshots/README.md).*
 
@@ -63,7 +63,7 @@ The project began with a practical trading-review problem and grew into a workin
 ## Explore TAD
 
 - [Bilingual product introduction](https://tradingalphadna.github.io/tad-showcase/) — choose **中文** for Chinese.
-- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf) — updated 2026-10-26 to match the current public technical preview.
+- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf) — product introduction dated 2026-10-26; its synthetic UI screenshots reflect alpha.1. For alpha.2 standard import, use the current guide above.
 - [Earlier presentation archive](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/showcase-v1.0.2) — introduction materials, not an application installer.
 - [Engineering case study](docs/engineering-case-study.md).
 

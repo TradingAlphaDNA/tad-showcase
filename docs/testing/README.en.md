@@ -3,17 +3,16 @@
 > **Your broker data stays on your computer.** In the current local TAD app, broker files and account data are imported, processed and saved on your own computer—not uploaded to a TAD cloud service. The interface's “Upload” action submits files to the app running on your computer. Sharing anything yourself through public feedback, email or an external service is a separate action.
 
 
-**Two separate paths:** this page and the unchanged download kit describe synthetic acceptance. After that passes, optional local personal-data evaluation is described in the [personal-data guide](personal-data.en.md). Check the [supported broker files](broker-support.en.md) and [export instructions](broker-export.en.md) first. Do not mix synthetic and personal accounts in the same environment. The synthetic-only instructions below remain applicable to the acceptance exercise; they are not a claim that the app rejects supported real files.
+**Two separate paths:** this page and the alpha.2 download kit describe synthetic acceptance. After that passes, optional local personal-data evaluation is described in the [personal-data guide](personal-data.en.md). Check the [supported broker files](broker-support.en.md) and [export instructions](broker-export.en.md) first. Do not mix synthetic and personal accounts in the same environment. The synthetic-only instructions below remain applicable to the acceptance exercise; they are not a claim that the app rejects supported real files.
 
 
-Distribution: **1.1.0-alpha.1 public technical preview**. Bundled application: **1.1.0-tester-review.1**, unchanged from the accepted local build. Installation on a test user's Mac has NOT yet been verified.
+Distribution: **1.1.0-alpha.2 public technical preview**. Bundled application: **1.1.0-alpha.2**, rebuilt with the accepted Standard CSV import and shared-core changes. Installation on a test user's Mac has NOT yet been verified.
 
-Download: https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.1
+Download: https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2
 Feedback: https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml
-The unchanged application is 1.1.0-tester-review.1, Apple Silicon arm64, tested
+The application is 1.1.0-alpha.2, Apple Silicon arm64, tested
 on the development Mac running macOS 15.2. The initial COMPATIBILITY TARGET is
-Apple Silicon M1 and later M-series Macs with release versions of macOS 15
-(Sequoia), 26 (Tahoe) or 27 (Golden Gate). This is a target, not a certification
+Apple Silicon M1 and later M-series Macs with release versions of macOS 15, 26 or 27. This is a target, not a certification
 of every chip/OS combination or a measured market-share claim. Only the
 development Mac's macOS 15.2 is verified so far; keep your own supported system
 and current security updates. Do not downgrade to 15.2 for this test.
@@ -41,12 +40,12 @@ the application source stays private. This kit contains artificial data only.
 
 ## 1. Download, check and open the application
 
-On the Release page, choose **TAD-1.1.0-alpha.1-macOS-arm64-test-kit.zip**. GitHub's automatic Source code ZIP/TAR contains showcase documents, not the application. The download already includes constructed files and an acceptance sheet. Unzip it, then continue below.
+On the Release page, choose **TAD-1.1.0-alpha.2-macOS-arm64-test-kit.zip**. GitHub's automatic Source code ZIP/TAR contains showcase documents, not the application. The download already includes constructed files and an acceptance sheet. Unzip it, then continue below.
 
 Unzip the outer kit. Open START-HERE.html for the English/Chinese overview.
 The reviewed application ZIP is in application/. Its SHA256 is:
 
-`2621bafd4ba65d2900d381f2484d7e5118fd9728ab0ec3b01f4e714bd9592ee7`
+`4a0c44f748802302223ca149672cf223e237f804518fdfec2d27fa8259400cb9`
 
 Optional operator check: open Terminal, type `cd `, drag the extracted kit folder
 onto it and press Return; run `shasum -a 256 -c SHA256SUMS`. All entries should
@@ -183,3 +182,5 @@ https://support.apple.com/en-us/109033 . First collect an end-to-end result on a
 available test user's machine; use M1/M2 and the lower target OS to probe the lower
 boundary when available, then add newer-OS results. Do not delay all testing while
 waiting for a specific chip, and do not require users to change their installed OS.
+
+[Standard CSV guide and two templates](standard-import.en.md) — alpha.2 adds converted activity and positions/CASH. Earlier alpha.1 is incompatible.

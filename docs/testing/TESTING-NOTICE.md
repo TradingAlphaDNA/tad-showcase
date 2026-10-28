@@ -41,12 +41,11 @@ showcase 均不授予私有源码访问或开源许可，第三方组件保留�
 After synthetic checks pass, you may evaluate supported personal files locally in
 a separate fresh environment. See [English personal-data guide](personal-data.en.md),
 [broker support](broker-support.en.md) and [export checks](broker-export.en.md).
-This does not certify complete history or cash, and does not modify the unchanged
-download kit or expand its hardware/financial verification. Statements remain
+This does not certify complete history, cash or additional hardware compatibility. Statements remain
 archive-only in the ordinary upload flow. Archived, applied and fully reconciled
-are different states. No generic standard-file importer is available yet.
+are different states. Alpha.2 includes a Standard CSV importer and two templates; declared conversions require user review.
 
 合成检查通过后，可在独立新环境本地试用受支持的个人文件。见[真实数据上手](personal-data.zh.md)、
 [支持矩阵](broker-support.zh.md)和[导出检查](broker-export.zh.md)。不代表历史／现金完整，
-不修改原下载套件或扩大已验证范围。普通上传流程中 statement 仍仅归档；归档、应用与
-完整对账是不同状态，通用标准文件导入尚未提供。
+不扩大硬件或财务已验证范围。普通上传流程中 statement 仍仅归档；归档、应用与
+完整对账是不同状态。alpha.2含标准CSV导入及两份模板，转换声明须由用户核对。
