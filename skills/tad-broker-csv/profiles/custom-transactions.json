@@ -1,0 +1,54 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "custom_sample-synthetic.v1",
+  "role": "transactions",
+  "header_record": 1,
+  "metadata": {
+    "source_broker": "custom_sample",
+    "account_ref": "0000",
+    "account_name": "Synthetic Custom_Sample",
+    "account_type": "brokerage",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "asset_type": "equity",
+    "multiplier": "1",
+    "amount_basis": "net_cash",
+    "position_effect": "unknown"
+  },
+  "columns": {
+    "execution_id": {
+      "column": "Ref"
+    },
+    "symbol": {
+      "column": "Stock"
+    },
+    "quantity": {
+      "column": "Units"
+    },
+    "price": {
+      "column": "UnitPrice"
+    },
+    "amount": {
+      "column": "NetUSD"
+    },
+    "fee_total": {
+      "column": "FeesUSD"
+    },
+    "activity": {
+      "column": "Direction",
+      "values": {
+        "B": "buy",
+        "S": "sell"
+      }
+    },
+    "trade_date": {
+      "column": "Day",
+      "date_format": "%d.%m.%Y"
+    }
+  },
+  "rules": [],
+  "exclusions": [],
+  "assertions": []
+}

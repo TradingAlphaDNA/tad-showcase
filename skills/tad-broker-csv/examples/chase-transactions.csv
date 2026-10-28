@@ -1,0 +1,3 @@
+Trade Date,Post Date,Settlement Date,Account Name,Account Number,Account Type,Type,Description,Cusip,Ticker,Security Type,Local Currency,Price USD,Price Local,Quantity,G/L Short USD,G/L Short Local,G/L Long USDs,G/L Long Local,Amount USD,Amount Local,Income USD,Income Local,Balance,Commissions USD,Commissions Local,Tran Code,Tran Code Description,Broker,Check Number,Tax Withheld
+01/02/2026,01/02/2026,01/05/2026,Synthetic,0000,,Buy,SYN UNSOLICITED,,SYN,Stock,USD,2,,10,,,,,-20,,,,,0,,,,,,
+01/03/2026,01/02/2026,01/05/2026,Synthetic,0000,,Sell,SYN UNSOLICITED,,SYN,Stock,USD,3,,-4,,,,,12,,,,,0,,,,,,

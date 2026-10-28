@@ -1,0 +1,114 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "etrade-synthetic.v1",
+  "role": "positions",
+  "header_record": 10,
+  "metadata": {
+    "source_broker": "etrade",
+    "account_ref": "0000",
+    "account_name": "Synthetic Etrade",
+    "account_type": "brokerage",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "record_type": "position",
+    "snapshot_role": "current",
+    "asset_type": "equity",
+    "multiplier": "1",
+    "cost_basis": "average_unit",
+    "snapshot_complete": "false",
+    "as_of": "2026-01-07",
+    "quote_as_of": "2026-01-07"
+  },
+  "columns": {
+    "symbol": {
+      "column": "Symbol"
+    },
+    "quantity": {
+      "column": "Quantity",
+      "number": "plain"
+    },
+    "cost_amount": {
+      "column": "Price Paid $",
+      "number": "plain"
+    },
+    "price": {
+      "column": "Last Price $",
+      "number": "plain"
+    },
+    "market_value": {
+      "column": "Value $",
+      "number": "plain"
+    },
+    "unrealized_pnl": {
+      "column": "Total Gain $",
+      "number": "plain"
+    }
+  },
+  "rules": [
+    {
+      "when": {
+        "column": "Symbol",
+        "equals": "CASH"
+      },
+      "defaults": {
+        "record_type": "cash",
+        "asset_type": "",
+        "multiplier": "",
+        "balance_category": "book_cash",
+        "cost_basis": "",
+        "quote_as_of": ""
+      },
+      "columns": {
+        "quantity": {
+          "column": "Symbol",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cost_amount": {
+          "column": "Symbol",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "price": {
+          "column": "Symbol",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "market_value": {
+          "column": "Symbol",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "unrealized_pnl": {
+          "column": "Symbol",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cash_amount": {
+          "column": "Value $",
+          "number": "plain"
+        }
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "column": "Symbol",
+      "equals": "TOTAL",
+      "reason": "Explicit portfolio total; never another position/cash"
+    },
+    {
+      "column": "Symbol",
+      "equals": "Generated at Jan 07 2026 11:10 PM ET",
+      "reason": "Report footer; date confirmed for this synthetic fixture"
+    }
+  ],
+  "assertions": []
+}

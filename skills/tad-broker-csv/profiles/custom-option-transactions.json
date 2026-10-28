@@ -1,0 +1,66 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "custom-option.v1",
+  "role": "transactions",
+  "header_record": 1,
+  "metadata": {
+    "source_broker": "custom_sample",
+    "account_ref": "synthetic-option",
+    "account_name": "Synthetic Custom_Sample",
+    "account_type": "brokerage",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "asset_type": "option",
+    "multiplier": "100",
+    "amount_basis": "net_cash",
+    "position_effect": "unknown"
+  },
+  "columns": {
+    "execution_id": {
+      "column": "ID"
+    },
+    "trade_date": {
+      "column": "Day"
+    },
+    "quantity": {
+      "column": "Contracts"
+    },
+    "price": {
+      "column": "Price"
+    },
+    "amount": {
+      "column": "Net"
+    },
+    "fee_total": {
+      "column": "Fees"
+    },
+    "underlying": {
+      "column": "Underlying"
+    },
+    "expiration": {
+      "column": "Expiry"
+    },
+    "strike": {
+      "column": "Strike"
+    },
+    "activity": {
+      "column": "Action",
+      "values": {
+        "B": "buy",
+        "S": "sell"
+      }
+    },
+    "right": {
+      "column": "Right",
+      "values": {
+        "C": "call",
+        "P": "put"
+      }
+    }
+  },
+  "rules": [],
+  "exclusions": [],
+  "assertions": []
+}

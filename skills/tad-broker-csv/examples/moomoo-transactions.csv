@@ -1,0 +1,3 @@
+Side,Symbol,Name,Order Price,Order Qty,Status,Filled@Avg Price,Order Time,Order Type,Fill Qty,Fill Price,Fill Amount,Fill Time,Options Regulatory Fees,OCC Fees,Total,Trading Activity Fees,Order Source,SEC Fees,Currency
+Buy,SYN,Synthetic,10,10,Filled,10@10,"Jan 02, 2026 09:00:00 ET",,10,10,100,"Jan 02, 2026 10:00:00 ET",0,0,0,0,,0,USD
+Sell,SYN,Synthetic,10,4,Filled,4@12,"Jan 03, 2026 09:00:00 ET",,4,12,48,"Jan 03, 2026 10:00:00 ET",0,0,0,0,,0,USD

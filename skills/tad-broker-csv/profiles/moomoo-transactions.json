@@ -1,0 +1,72 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "moomoo-synthetic.v1",
+  "role": "transactions",
+  "header_record": 1,
+  "metadata": {
+    "source_broker": "moomoo",
+    "account_ref": "0001",
+    "account_name": "Synthetic Moomoo",
+    "account_type": "margin",
+    "currency": "USD",
+    "timezone": "America/New_York"
+  },
+  "defaults": {
+    "asset_type": "equity",
+    "multiplier": "1",
+    "position_effect": "unknown",
+    "amount_basis": "gross_trade"
+  },
+  "columns": {
+    "activity": {
+      "column": "Side",
+      "values": {
+        "Buy": "buy",
+        "Sell": "sell"
+      }
+    },
+    "symbol": {
+      "column": "Symbol"
+    },
+    "quantity": {
+      "column": "Fill Qty",
+      "number": "abs"
+    },
+    "price": {
+      "column": "Fill Price",
+      "number": "plain"
+    },
+    "amount": {
+      "column": "Fill Amount",
+      "number": "plain"
+    },
+    "fee_total": {
+      "column": "Total",
+      "number": "plain"
+    },
+    "trade_date": {
+      "column": "Fill Time",
+      "date_format": "%b %d, %Y %H:%M:%S ET"
+    },
+    "currency": {
+      "column": "Currency"
+    },
+    "trade_time": {
+      "column": "Fill Time",
+      "datetime_format": "%b %d, %Y %H:%M:%S ET",
+      "timezone": "America/New_York"
+    }
+  },
+  "rules": [],
+  "exclusions": [],
+  "assertions": [
+    {
+      "column": "Status",
+      "equals": "Filled"
+    },
+    {
+      "column": "Order Qty",
+      "equals_column": "Fill Qty"
+    }
+  ]
+}

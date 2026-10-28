@@ -1,4 +1,4 @@
-# Supported broker files — 1.1.0-alpha.2-r1
+# Supported broker files — 1.1.0-alpha.3
 
 > **Your broker data stays on your computer.** In the current local TAD app, broker files and account data are imported, processed and saved on your own computer—not uploaded to a TAD cloud service. The interface's “Upload” action submits files to the app running on your computer. Sharing anything yourself through public feedback, email or an external service is a separate action.
 
@@ -6,7 +6,7 @@
 [中文](broker-support.zh.md) · [Export guide](broker-export.en.md) · [Use your own data](personal-data.en.md) · [Install and synthetic checks](README.en.md)
 
 **Support means the specific file layouts below, not every export from a broker.**
-This public kit contains app **1.1.0-alpha.2-r1**. All three native Connectors and the Standard CSV Connector are included. The first personal-data evaluation scope is **USD
+This public kit contains app **1.1.0-alpha.3**. All three native Connectors and the Standard CSV Connector are included. The first personal-data evaluation scope is **USD
 investment accounts, stocks and supported standard US equity-option records**.
 Other currencies, regions, languages, products and adjusted/nonstandard options
 are not promised by the broker name. There is no automatic broker login or sync.

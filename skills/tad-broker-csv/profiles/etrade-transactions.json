@@ -1,0 +1,69 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "etrade-synthetic.v1",
+  "role": "transactions",
+  "header_record": 7,
+  "metadata": {
+    "source_broker": "etrade",
+    "account_ref": "0000",
+    "account_name": "Synthetic Etrade",
+    "account_type": "brokerage",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "asset_type": "equity",
+    "multiplier": "1",
+    "position_effect": "unknown",
+    "amount_basis": "net_cash"
+  },
+  "columns": {
+    "activity": {
+      "column": "Activity Type",
+      "values": {
+        "Bought": "buy",
+        "Sold": "sell"
+      }
+    },
+    "symbol": {
+      "column": "Symbol"
+    },
+    "quantity": {
+      "column": "Quantity #",
+      "number": "abs"
+    },
+    "price": {
+      "column": "Price $",
+      "number": "plain"
+    },
+    "amount": {
+      "column": "Amount $",
+      "number": "plain"
+    },
+    "commission": {
+      "column": "Commission",
+      "number": "plain"
+    },
+    "trade_date": {
+      "column": "Activity/Trade Date",
+      "date_format": "%m/%d/%Y"
+    },
+    "post_date": {
+      "column": "Transaction Date",
+      "date_format": "%m/%d/%Y"
+    },
+    "settlement_date": {
+      "column": "Settlement Date",
+      "date_format": "%m/%d/%Y"
+    }
+  },
+  "rules": [],
+  "exclusions": [
+    {
+      "column": "Activity/Trade Date",
+      "equals": "For all accounts, the Activity Date is displayed.",
+      "reason": "Exact source report explanatory footer; not an execution"
+    }
+  ],
+  "assertions": []
+}
