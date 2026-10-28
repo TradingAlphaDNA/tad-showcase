@@ -1,4 +1,4 @@
-# Supported broker files — 1.1.0-alpha.1
+# Supported broker files — 1.1.0-alpha.2
 
 > **Your broker data stays on your computer.** In the current local TAD app, broker files and account data are imported, processed and saved on your own computer—not uploaded to a TAD cloud service. The interface's “Upload” action submits files to the app running on your computer. Sharing anything yourself through public feedback, email or an external service is a separate action.
 
@@ -6,8 +6,7 @@
 [中文](broker-support.zh.md) · [Export guide](broker-export.en.md) · [Use your own data](personal-data.en.md) · [Install and synthetic checks](README.en.md)
 
 **Support means the specific file layouts below, not every export from a broker.**
-This public kit contains app **1.1.0-tester-review.1**. All three independent
-Connectors are included. The first personal-data evaluation scope is **USD
+This public kit contains app **1.1.0-alpha.2**. All three native Connectors and the Standard CSV Connector are included. The first personal-data evaluation scope is **USD
 investment accounts, stocks and supported standard US equity-option records**.
 Other currencies, regions, languages, products and adjusted/nonstandard options
 are not promised by the broker name. There is no automatic broker login or sync.
@@ -19,12 +18,12 @@ are not promised by the broker name. There is no automatic broker login or sync.
 | Moomoo | English-header order/fill-history CSV with execution details and available fees | CSV with `Symbol`, `Quantity`, `Current price`, `Average Cost`, `Market Value`, `Unrealized P/L`, `Currency` | Confirm the actual snapshot date. These positions do not by themselves establish a cash balance. Order history is not complete non-trade cash activity. |
 | Chase / J.P. Morgan investment accounts | Complete **31-column** investment-transactions CSV, including account identity, dates, type, security description, quantities and USD amounts | Complete **71-column** investment positions CSV, including `As of`, `Ticker`, `Quantity`, `Asset Class`, `Pricing Date` | A realized gain/loss CSV reader exists for historical comparison/reconciliation. It is **not** a third financial input in the ordinary upload/update flow. Checking, credit-card and merchant CSVs are not this format. |
 | E*TRADE | `Account Activity for ...` CSV, with explicit date range or supported Current Year / Prior Year header, and the full 13-column activity table | Complete `View Summary - All Positions` portfolio CSV with account summary, `Net Account Value`, full positions table and `Generated at ... ET` | A CASH row is a balance observation. Cash Purchasing Power is not cash; TOTAL already includes cash. Filtered portfolio views and missing account/date metadata are not supported substitutes. |
+| Standard CSV (converted / user supplied) | TAD.transactions.v1.csv | TAD.positions.v1.csv with separate CASH | USD equity / standard100 US options; declared provenance; exact account identity, unknown values and incomplete coverage remain explicit. [Guide](standard-import.en.md). |
 
-All three formats preserve broker originals and use the same core reconstruction
+Native formats preserve broker originals and use the same core reconstruction
 and analysis. A CSV that is recognized can still require review before it can be
 applied. Renaming XLSX/PDF to CSV, translating headers or converting another
-broker into a Moomoo-looking file does not make it supported. **A generic TAD
-import Connector/template is not available in this release.**
+broker into a Moomoo-looking file does not make it supported. **For unsupported brokers, use the [Standard CSV Connector and templates](standard-import.en.md), not a forged native layout.**
 
 ## What has actually been checked?
 

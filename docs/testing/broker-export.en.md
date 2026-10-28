@@ -110,6 +110,4 @@ broker.** Save a TAD draft if needed and report broker, report type, platform,
 app version and sanitized error/header names only. Do not attach account rows,
 originals or screenshots containing personal details to public issues.
 
-There is no published generic import template in this release. Supplied
-synthetic broker files demonstrate supported layouts; they are not conversion
-instructions for unsupported brokers.
+For unsupported brokers, alpha.2 provides [two Standard CSV templates and a conversion guide](standard-import.en.md). Keep native originals and map explicit records; do not imitate another broker layout. AI conversion is optional outside TAD; cloud AI use is a separate data transfer.
