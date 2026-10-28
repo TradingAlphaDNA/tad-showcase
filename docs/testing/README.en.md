@@ -6,11 +6,11 @@
 **Two separate paths:** this page and the alpha.2 download kit describe synthetic acceptance. After that passes, optional local personal-data evaluation is described in the [personal-data guide](personal-data.en.md). Check the [supported broker files](broker-support.en.md) and [export instructions](broker-export.en.md) first. Do not mix synthetic and personal accounts in the same environment. The synthetic-only instructions below remain applicable to the acceptance exercise; they are not a claim that the app rejects supported real files.
 
 
-Distribution: **1.1.0-alpha.2 public technical preview**. Bundled application: **1.1.0-alpha.2**, rebuilt with the accepted Standard CSV import and shared-core changes. Installation on a test user's Mac has NOT yet been verified.
+Distribution: **1.1.0-alpha.2-r1 public technical preview**. Bundled application: **1.1.0-alpha.2-r1**, rebuilt with the accepted Standard CSV import and shared-core changes. This revision fixes kit identity metadata and Unicode-path process detection under a non-UTF-8 terminal locale. Financial calculation rules are unchanged. Installation on a test user's Mac has NOT yet been verified.
 
-Download: https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2
+Download: https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2-r1
 Feedback: https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml
-The application is 1.1.0-alpha.2, Apple Silicon arm64, tested
+The application is 1.1.0-alpha.2-r1, Apple Silicon arm64, tested
 on the development Mac running macOS 15.2. The initial COMPATIBILITY TARGET is
 Apple Silicon M1 and later M-series Macs with release versions of macOS 15, 26 or 27. This is a target, not a certification
 of every chip/OS combination or a measured market-share claim. Only the
@@ -40,12 +40,12 @@ the application source stays private. This kit contains artificial data only.
 
 ## 1. Download, check and open the application
 
-On the Release page, choose **TAD-1.1.0-alpha.2-macOS-arm64-test-kit.zip**. GitHub's automatic Source code ZIP/TAR contains showcase documents, not the application. The download already includes constructed files and an acceptance sheet. Unzip it, then continue below.
+On the Release page, choose **TAD-1.1.0-alpha.2-r1-macOS-arm64-test-kit.zip**. GitHub's automatic Source code ZIP/TAR contains showcase documents, not the application. The download already includes constructed files and an acceptance sheet. Unzip it, then continue below.
 
 Unzip the outer kit. Open START-HERE.html for the English/Chinese overview.
 The reviewed application ZIP is in application/. Its SHA256 is:
 
-`4a0c44f748802302223ca149672cf223e237f804518fdfec2d27fa8259400cb9`
+`5b3f2512bfa18cd54761a4b7fa858b5e110280314c5777199ccee7585abd33d1`
 
 Optional operator check: open Terminal, type `cd `, drag the extracted kit folder
 onto it and press Return; run `shasum -a 256 -c SHA256SUMS`. All entries should
