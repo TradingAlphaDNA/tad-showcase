@@ -33,3 +33,7 @@ AI转换可选，在TAD外进行；优先使用本地工具。把原件发给云
 仅USD股票及乘数100的标准美股期权；不支持调整／非标准交割、换汇、期货、加密资产。估值持仓行需成本／口径、价格、市值、浮盈亏和报价日；缺失保持待核，不补0。部分快照缺证券不代表平仓；只采用一次账户book_cash余额，购买力／NAV／TOTAL不是现金。哈希和完整性旗标是映射声明，不代表独立核验原件或完整历史。只有终止数量、没有金额时不能推造盈亏；冲突记录及不明重叠需核对，未知身份不能猜测。已有历史期初／入账现金资格问题仍在支持矩阵公开说明。
 
 [反馈](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml)应脱敏；不要公开真实交易行、原件、备份、密钥或私人日志。
+
+## 可选转换助手
+
+[下载转换助手 skill0.1.0](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-broker-csv-v0.1.0)，阅读[中文指南](../../skills/tad-broker-csv/README.zh.md)。复用相同两份模板，使用明确映射、本地 Python3.10+ 工具及逐行报告，不含应用源码。已验收的同名多账户路径请用 alpha.3，旧 alpha.2/r1 有身份组合限制。未知 Journal/生命周期事件会阻止输出；交给外部云端 AI 是另行选择的数据传输。

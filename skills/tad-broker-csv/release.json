@@ -1,0 +1,20 @@
+{
+  "skill_version": "0.1.0",
+  "schema": "tad.standard-csv.v1",
+  "mapping_contract": "tad.csv-map.v1",
+  "application_source": "private_not_included",
+  "compatible_app_min": "1.1.0-alpha.3",
+  "tested_app": "1.1.0-alpha.3",
+  "tested_app_zip_sha256": "ae034975e16ddc9e2bc886e194db23befb636631956a9c8adabab0e19a7bf4dd",
+  "license": "MIT companion only; proprietary TAD application excluded",
+  "verified": {
+    "python": [
+      "3.10",
+      "3.12"
+    ],
+    "os": "macOS15.2 Apple Silicon",
+    "host": "Codex manual filesystem-loading; automatic discovery not tested"
+  },
+  "known_application_limit": "Oldalpha2/r1 same-name distinct-account issue; alpha3 source-backed creation corrected. Legacy/manual-no-activity recipes retain v1 policy. Newv2 inputs require alpha3; no personal migration.",
+  "helper_sha256": "09dad1272fd207d7e765630dbe0060138646d96ca5362318b3d3bf73d1541db3"
+}

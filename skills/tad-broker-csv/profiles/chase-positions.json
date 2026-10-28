@@ -1,0 +1,125 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "chase-synthetic.v1",
+  "role": "positions",
+  "header_record": 1,
+  "metadata": {
+    "source_broker": "chase",
+    "account_ref": "0000",
+    "account_name": "Synthetic Chase",
+    "account_type": "brokerage",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "record_type": "position",
+    "snapshot_role": "current",
+    "asset_type": "equity",
+    "multiplier": "1",
+    "cost_basis": "remaining_total",
+    "snapshot_complete": "false"
+  },
+  "columns": {
+    "symbol": {
+      "column": "Ticker"
+    },
+    "quantity": {
+      "column": "Quantity",
+      "number": "plain"
+    },
+    "cost_amount": {
+      "column": "Cost",
+      "number": "plain"
+    },
+    "price": {
+      "column": "Price",
+      "number": "plain"
+    },
+    "market_value": {
+      "column": "Value",
+      "number": "plain"
+    },
+    "unrealized_pnl": {
+      "column": "Unrealized G/L Amt.",
+      "number": "plain"
+    },
+    "currency": {
+      "column": "Base CCY"
+    },
+    "account_ref": {
+      "column": "Account Number"
+    },
+    "as_of": {
+      "column": "As of",
+      "date_format": "%m/%d/%Y"
+    },
+    "quote_as_of": {
+      "column": "Pricing Date",
+      "date_format": "%m/%d/%Y %H:%M:%S"
+    }
+  },
+  "rules": [
+    {
+      "when": {
+        "column": "Ticker",
+        "equals": "CASH"
+      },
+      "defaults": {
+        "record_type": "cash",
+        "asset_type": "",
+        "multiplier": "",
+        "balance_category": "book_cash"
+      },
+      "columns": {
+        "quantity": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cost_amount": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cost_basis": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "price": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "market_value": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "unrealized_pnl": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "quote_as_of": {
+          "column": "Ticker",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cash_amount": {
+          "column": "Value",
+          "number": "plain"
+        }
+      }
+    }
+  ],
+  "exclusions": [],
+  "assertions": []
+}

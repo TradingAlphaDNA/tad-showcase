@@ -1,0 +1,108 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "custom_sample-synthetic.v1",
+  "role": "positions",
+  "header_record": 1,
+  "metadata": {
+    "source_broker": "custom_sample",
+    "account_ref": "0000",
+    "account_name": "Synthetic Custom_Sample",
+    "account_type": "brokerage",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "record_type": "position",
+    "snapshot_role": "current",
+    "asset_type": "equity",
+    "multiplier": "1",
+    "cost_basis": "remaining_total",
+    "snapshot_complete": "false"
+  },
+  "columns": {
+    "symbol": {
+      "column": "Item"
+    },
+    "quantity": {
+      "column": "Shares"
+    },
+    "cost_amount": {
+      "column": "RemainingCost"
+    },
+    "price": {
+      "column": "Quote"
+    },
+    "market_value": {
+      "column": "Value"
+    },
+    "unrealized_pnl": {
+      "column": "Unrealized"
+    },
+    "as_of": {
+      "column": "Date",
+      "date_format": "%d.%m.%Y"
+    },
+    "quote_as_of": {
+      "column": "Date",
+      "date_format": "%d.%m.%Y"
+    }
+  },
+  "rules": [
+    {
+      "when": {
+        "column": "Item",
+        "equals": "CASH"
+      },
+      "defaults": {
+        "record_type": "cash",
+        "asset_type": "",
+        "multiplier": "",
+        "cost_basis": "",
+        "balance_category": "book_cash"
+      },
+      "columns": {
+        "quantity": {
+          "column": "Item",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cost_amount": {
+          "column": "Item",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "price": {
+          "column": "Item",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "market_value": {
+          "column": "Item",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "unrealized_pnl": {
+          "column": "Item",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "quote_as_of": {
+          "column": "Item",
+          "values": {
+            "CASH": ""
+          }
+        },
+        "cash_amount": {
+          "column": "Cash"
+        }
+      }
+    }
+  ],
+  "exclusions": [],
+  "assertions": []
+}

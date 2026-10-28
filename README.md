@@ -10,11 +10,11 @@ Your broker lists transactions and positions. But when a stock holding, option t
 
 TAD connects related trading records so investors can review profit and loss, returns and capital use by account, stock and strategy.
 
-[Download the Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2-r1) · [See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
+[Download the Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.3) · [See the product](https://tradingalphadna.github.io/tad-showcase/) · [Request a demo](mailto:hhuang68@gmail.com) · [Engineering case study](docs/engineering-case-study.md)
 
 ## Mac technical preview · Mac 公开测试
 
-**[Download 1.1.0-alpha.2-r1](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.2-r1) · [English guide](docs/testing/README.en.md) · [中文说明](docs/testing/README.zh.md) · [Report a test result](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml)**
+**[Download 1.1.0-alpha.3](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.3) · [English guide](docs/testing/README.en.md) · [中文说明](docs/testing/README.zh.md) · [Report a test result](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml)**
 
 **Ad-hoc signed · NOT notarized / 临时签名，尚未公证.** macOS may block first launch; record the warning and contact the project. Do not disable system protections to run this preview.
 
@@ -24,7 +24,7 @@ TAD connects related trading records so investors can review profit and loss, re
 | Verified / 已实测 | Development Mac on macOS 15.2; constructed cases and independent same-Mac review |
 | Pending / 待验证 | Test users’ own Macs, Finder installation and browser-download/security prompts |
 
-No Git, Python, Node or private repository access is required. The download includes the rebuilt application **1.1.0-alpha.2-r1**, synthetic broker files, bilingual instructions and a test checklist. Start with those samples in a new personal environment. [Preview evaluation notice](docs/testing/TESTING-NOTICE.md).
+No Git, Python, Node or private repository access is required. The download includes the rebuilt application **1.1.0-alpha.3**, synthetic broker files, bilingual instructions and a test checklist. Start with those samples in a new personal environment. [Preview evaluation notice](docs/testing/TESTING-NOTICE.md).
 
 This is a public prerelease, not a promise that every target chip/OS combination works. Share only sanitized feedback; keep account details, broker originals and backups out of public issues. **公开预发布，用户环境兼容结果仍待反馈；请勿公开账户资料或券商原件。**
 
@@ -35,6 +35,9 @@ This is a public prerelease, not a promise that every target chip/OS combination
 **[中文支持矩阵](docs/testing/broker-support.zh.md) · [中文导出指南](docs/testing/broker-export.zh.md) · [真实数据上手](docs/testing/personal-data.zh.md)**
 
 Moomoo, Chase / J.P. Morgan **investment accounts**, and E*TRADE have independent Connectors for specific CSV layouts. Start with the supplied synthetic cases; optional personal-data evaluation uses a **separate fresh environment** and the online guide. Broker name alone does not guarantee compatibility. PDF statements are archive-only in the ordinary upload flow; **alpha.2 adds a Standard CSV Connector** for converted or user-supplied activity and positions/CASH. [Two templates and bilingual field guide](docs/standard-import/index.html).
+
+
+**Optional [broker CSV conversion skill0.1.0](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-broker-csv-v0.1.0)** prepares supported activity and position CSVs using explicit mappings and a local Python3.10+ helper. [English](skills/tad-broker-csv/README.en.md) · [中文](skills/tad-broker-csv/README.zh.md). The reviewed multi-account workflow requires alpha.3; automatic AI-host installation is not certified. Helper source is public/MIT; TAD application source remains private.
 
 **Archived ≠ applied; applied ≠ fully reconciled. / 已归档不等于已应用，已应用不等于全部对账通过。** Check account, date coverage, opening holdings/cash and unresolved items before interpreting results. The support matrix separates implemented readers, actual test evidence and pending real-file compatibility. The alpha.2 package, attached guides and templates are versioned together; alpha.1 remains available as an older release and cannot read the new templates.
 

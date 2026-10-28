@@ -1,0 +1,55 @@
+{
+  "schema": "tad.csv-map.v1",
+  "mapping_version": "moomoo-synthetic.v1",
+  "role": "positions",
+  "header_record": 1,
+  "metadata": {
+    "source_broker": "moomoo",
+    "account_ref": "0001",
+    "account_name": "Synthetic Moomoo",
+    "account_type": "margin",
+    "currency": "USD",
+    "timezone": ""
+  },
+  "defaults": {
+    "record_type": "position",
+    "snapshot_role": "current",
+    "asset_type": "equity",
+    "multiplier": "1",
+    "cost_basis": "average_unit",
+    "snapshot_complete": "false",
+    "as_of": "2026-01-07",
+    "quote_as_of": "2026-01-07"
+  },
+  "columns": {
+    "symbol": {
+      "column": "Symbol"
+    },
+    "quantity": {
+      "column": "Quantity",
+      "number": "plain"
+    },
+    "cost_amount": {
+      "column": "Average Cost",
+      "number": "plain"
+    },
+    "price": {
+      "column": "Current price",
+      "number": "plain"
+    },
+    "market_value": {
+      "column": "Market Value",
+      "number": "plain"
+    },
+    "unrealized_pnl": {
+      "column": "Unrealized P/L",
+      "number": "plain"
+    },
+    "currency": {
+      "column": "Currency"
+    }
+  },
+  "rules": [],
+  "exclusions": [],
+  "assertions": []
+}

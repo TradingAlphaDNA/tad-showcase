@@ -1,0 +1,15 @@
+Account Summary
+Account,Net Account Value,Total Gain $,Total Gain %,Day's Gain Unrealized $,Day's Gain Unrealized %,2026 Contributions,Cash Purchasing Power
+Roth IRA -0000,1010,6,0,0,0,0,9999
+
+View Summary - All Positions
+Filters applied:
+Symbol,Security type(s),Sort by,Sort order,
+,All,Symbol,Asc,
+
+Symbol,Last Price $,Change $,Change %,Quantity,Price Paid $,Day's Gain $,Total Gain $,Total Gain %,Value $
+SYN,3,0,0,6,2,0,6,0,18
+CASH,,,,,,,,,992
+TOTAL,,,,,12,,6,,1010
+
+Generated at Jan 07 2026 11:10 PM ET
