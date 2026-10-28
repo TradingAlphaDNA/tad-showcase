@@ -1,0 +1,2 @@
+docs/standard-import/*.csv -text
+docs/standard-import/examples/*.csv -text
