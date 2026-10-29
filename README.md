@@ -39,7 +39,7 @@ Moomoo, Chase / J.P. Morgan **investment accounts**, and E*TRADE have independen
 
 **Optional [broker CSV conversion skill0.1.0](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-broker-csv-v0.1.0)** prepares supported activity and position CSVs using explicit mappings and a local Python3.10+ helper. [English](skills/tad-broker-csv/README.en.md) · [中文](skills/tad-broker-csv/README.zh.md). The reviewed multi-account workflow requires alpha.3; automatic AI-host installation is not certified. Helper source is public/MIT; TAD application source remains private.
 
-**Archived ≠ applied; applied ≠ fully reconciled. / 已归档不等于已应用，已应用不等于全部对账通过。** Check account, date coverage, opening holdings/cash and unresolved items before interpreting results. The support matrix separates implemented readers, actual test evidence and pending real-file compatibility. The alpha.2 package, attached guides and templates are versioned together; alpha.1 remains available as an older release and cannot read the new templates.
+**Archived ≠ applied; applied ≠ fully reconciled. / 已归档不等于已应用，已应用不等于全部对账通过。** Check account, date coverage, opening holdings/cash and unresolved items before interpreting results. The support matrix separates implemented readers, actual test evidence and pending real-file compatibility. Use the matching application, guides and templates from the release linked above. Alpha.1 remains available as an older release and cannot read the new templates.
 
 ## Who it is for
 
@@ -66,7 +66,7 @@ The project began with a practical trading-review problem and grew into a workin
 ## Explore TAD
 
 - [Bilingual product introduction](https://tradingalphadna.github.io/tad-showcase/) — choose **中文** for Chinese.
-- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf) — product introduction dated 2026-10-26; its synthetic UI screenshots reflect alpha.1. For alpha.2 standard import, use the current guide above.
+- [English PDF](TADIntro.en.pdf) · [中文 PDF](TADIntro.cn.pdf) — product introduction dated 2026-10-26; its synthetic UI screenshots reflect alpha.1. For current standard CSV import, use the guide above.
 - [Earlier presentation archive](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/showcase-v1.0.2) — introduction materials, not an application installer.
 - [Engineering case study](docs/engineering-case-study.md).
 
@@ -80,7 +80,20 @@ The application runs on your computer without a model or API key. Financial calc
 
 Does TAD address a problem you face when trading options? If you’d like to help us improve it, email us at **[hhuang68@gmail.com](mailto:hhuang68@gmail.com)**. We’ll follow up to learn about your needs and discuss how we can help.
 
-Please don’t include account details or trading records in your initial email.
+Try the [Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.3) with the included samples, then [share test feedback](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml): what helped, and what was hard to understand?
+
+Trading experts and developers are welcome to help improve trade reviews, data import and the user experience. Email us to discuss collaborating.
+
+欢迎股票与期权交易用户试用和反馈，也欢迎交易专家、开发者共同改进分析、数据导入与使用体验。先从合成样例开始，可通过上面的反馈入口或邮件联系我们。
+
+Please keep account details, trading records and private strategies out of public feedback and initial emails. 请勿在公开反馈或首次邮件中包含账户资料、交易记录或私人策略。
+
+### Related projects · 相关项目
+
+- [Trading Alpha System (TAS)](https://github.com/TradingAlphaSystem): a personal trading workspace being developed to connect analysis, trading knowledge and methods with AI agents. 以智能体协作为核心，连接交易分析、知识与方法应用的个人交易进化工作台。
+- [Trading Knowledge Hub (TKH)](https://github.com/TradingKnowledgeHub): a trading knowledge project under active development. 持续开发中的交易知识项目。
+
+Cross-product integration is not yet validated. The TAD preview does not represent a complete TAS release; TAD’s privacy, pricing and release terms do not extend to TAS or TKH. 跨产品集成尚未验证；TAD 测试版不代表完整 TAS 已交付，各项目的隐私、价格和发行条款分别说明。
 
 ## Availability and use
 
