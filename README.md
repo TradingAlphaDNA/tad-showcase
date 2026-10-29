@@ -22,7 +22,11 @@ TAD connects related trading records so investors can review profit and loss, re
 | --- | --- |
 | Planned / 计划支持 | Apple Silicon M1 and later M-series; release macOS 15, 26 and 27 |
 | Verified / 已实测 | Development Mac on macOS 15.2; constructed cases and independent same-Mac review |
-| Pending / 待验证 | Test users’ own Macs, Finder installation and browser-download/security prompts |
+| Pending / 待验证 | New testers’ own Macs: downloading, Finder installation, security prompts, and setting up a fresh personal environment |
+
+New testers use their own Macs to download and install TAD, set up a fresh personal environment, and—after the synthetic checks pass—optionally import their own supported data locally.
+
+新测试用户在自己的 Mac 上自行下载、安装 TAD，建立独立个人环境；先通过合成样例检查，再自愿在本机导入自己受支持的数据。
 
 No Git, Python, Node or private repository access is required. The download includes the rebuilt application **1.1.0-alpha.3**, synthetic broker files, bilingual instructions and a test checklist. Start with those samples in a new personal environment. [Preview evaluation notice](docs/testing/TESTING-NOTICE.md).
 
