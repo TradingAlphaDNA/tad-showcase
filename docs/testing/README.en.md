@@ -6,7 +6,7 @@
 **Two separate paths:** this page and the alpha.2 download kit describe synthetic acceptance. After that passes, optional local personal-data evaluation is described in the [personal-data guide](personal-data.en.md). Check the [supported broker files](broker-support.en.md) and [export instructions](broker-export.en.md) first. Do not mix synthetic and personal accounts in the same environment. The synthetic-only instructions below remain applicable to the acceptance exercise; they are not a claim that the app rejects supported real files.
 
 
-Distribution: **1.1.0-alpha.3 public technical preview**. Bundled application: **1.1.0-alpha.3**, rebuilt with the accepted Standard CSV import and shared-core changes. This version fixes source-backed account identity: same-name accounts with distinct full source references stay separate; legacy recipes retain their saved policy. Source normalization and financial calculation rules are unchanged. New v2 recovery inputs require alpha.3; older programs reject them. Manual no-activity starts keep the legacy provisional binding path. Installation on a test user's Mac has NOT yet been verified.
+Distribution: **1.1.0-alpha.3 public technical preview**. Bundled application: **1.1.0-alpha.3**, rebuilt with the accepted Standard CSV import and shared-core changes. This version fixes source-backed account identity: same-name accounts with distinct full source references stay separate; legacy recipes retain their saved policy. Source normalization and financial calculation rules are unchanged. New v2 recovery inputs require alpha.3; older programs reject them. Manual no-activity starts keep the legacy provisional binding path. Installation on a new tester’s own Mac has NOT yet been verified.
 
 Download: https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.3
 Feedback: https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml
@@ -21,8 +21,9 @@ the application source stays private. This kit contains artificial data only.
 
 ## Before starting
 
-- Use the TEST USER'S own Mac in the target range and a fresh personal environment;
-  the project owner does not need to provide a second computer. Record the
+- Use a NEW TESTER’S OWN Mac in the target range and a fresh personal environment.
+  This tests a new user’s download, installation and setup journey; it does not
+  require a second computer or newly purchased hardware. Record the
   chip, exact macOS version, tester, date and transfer method in ACCEPTANCE.en.md.
 - No private repository, Git, Python, Node, Xcode, model account or API key is
   required. A browser and the standard macOS Terminal/Finder are sufficient.
@@ -174,12 +175,12 @@ not run, and sanitized screenshots. Keep local technical evidence separate from
 public feedback. Do not send originals, account numbers, logs with personal paths,
 backups, passwords or keys. The kit does not automatically upload your trading data. Submit feedback yourself using the public feedback link, after removing personal information.
 
-This preview is published so users can report their actual download, security prompts and installation results. Those results are still pending: it does not certify Apple notarization, Intel, every target OS, automated upgrade or real-data restore. Publishing it does not upgrade your existing installation. Start with the supplied synthetic cases; using your own records later is optional and remains local. Read TESTING-NOTICE.md for evaluation scope.
+This preview is published so new testers can report their own Mac’s actual download, security prompts, installation and personal-environment setup results. Those results are still pending: it does not certify Apple notarization, Intel, every target OS, automated upgrade or real-data restore. Publishing it does not upgrade your existing installation. Start with the supplied synthetic cases; using your own records later is optional and remains local. Read TESTING-NOTICE.md for evaluation scope.
 
 Compatibility references (hardware/OS eligibility, not TAD certification):
 https://support.apple.com/en-us/120282 , https://support.apple.com/en-us/122867 ,
-https://support.apple.com/en-us/109033 . First collect an end-to-end result on an
-available test user's machine; use M1/M2 and the lower target OS to probe the lower
+https://support.apple.com/en-us/109033 . First collect an end-to-end result on a
+new tester’s own available Mac; use M1/M2 and the lower target OS to probe the lower
 boundary when available, then add newer-OS results. Do not delay all testing while
 waiting for a specific chip, and do not require users to change their installed OS.
 

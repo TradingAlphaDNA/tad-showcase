@@ -32,7 +32,7 @@ broker into a Moomoo-looking file does not make it supported. **For unsupported 
 | Implemented | Three separate versioned Connectors, shared core, account review, preview, explicit application and update paths. |
 | Checked in the downloadable binary on the development Mac | Constructed cases for each broker: new account, transactions plus positions, incremental update, overlap/dedup and repeat application; saved results and retained documents/draft/display preference. The Moomoo case also checks options/shared support. |
 | Existing private project history | Prior real-account import/reconciliation work informed the readers. This is not certification of a new tester's files and does not publish private evidence. |
-| Pending | Test-user Mac compatibility and each tester's real export/account/history. Chase/E*TRADE public synthetic cases are simple stock/cash cases, not full option-lifecycle certification. |
+| Pending | Compatibility on new testers’ own Macs and each new tester’s real export/account/history. Chase/E*TRADE public synthetic cases are simple stock/cash cases, not full option-lifecycle certification. |
 
 Mac signing and hardware/OS limits remain in the [installation guide](README.en.md).
 This documentation update does not rebuild the binary or expand its tested scope.
