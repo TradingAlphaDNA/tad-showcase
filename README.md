@@ -80,11 +80,11 @@ Import supported transaction exports from Chase, moomoo or E*TRADE, review the c
 
 The application runs on your computer without a model or API key. Financial calculations use Python rules and Decimal arithmetic. The interface uses HTML, CSS and JavaScript; SQLite retains application and correction history. AI tools assist development and review.
 
-### Help improve TAD
+### Co-create with us · 参与共创
 
-Does TAD address a problem you face when trading options? If you’d like to help us improve it, email us at **[hhuang68@gmail.com](mailto:hhuang68@gmail.com)**. We’ll follow up to learn about your needs and discuss how we can help.
+Does TAD address a problem you face when trading stocks and options? If you’d like to help us improve it, email us at **[hhuang68@gmail.com](mailto:hhuang68@gmail.com)**. We’ll follow up to learn about your needs and discuss how we can help.
 
-Try the [Mac preview](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.3) with the included samples, then [share test feedback](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml): what helped, and what was hard to understand?
+[Try TAD · 体验 TAD](https://github.com/TradingAlphaDNA/tad-showcase/releases/tag/tad-test-v1.1.0-alpha.3) with the included samples, then [Share test feedback · 反馈测试结果](https://github.com/TradingAlphaDNA/tad-showcase/issues/new?template=technical-preview.yml): what helped, and what was hard to understand?
 
 Trading experts and developers are welcome to help improve trade reviews, data import and the user experience. Email us to discuss collaborating.
 
