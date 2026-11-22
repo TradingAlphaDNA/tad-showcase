@@ -92,12 +92,14 @@ Trading experts and developers are welcome to help improve trade reviews, data i
 
 Please keep account details, trading records and private strategies out of public feedback and initial emails. 请勿在公开反馈或首次邮件中包含账户资料、交易记录或私人策略。
 
-### Related projects · 相关项目
+### Related projects and development · 相关项目与开发进展
 
 - [Trading Alpha System (TAS)](https://github.com/TradingAlphaSystem): a personal trading workspace being developed to connect analysis, trading knowledge and methods with AI agents. 以智能体协作为核心，连接交易分析、知识与方法应用的个人交易进化工作台。
-- [Trading Knowledge Hub (TKH)](https://github.com/TradingKnowledgeHub): a trading knowledge project under active development. 持续开发中的交易知识项目。
+- [Trading Knowledge Hub (TKH)](https://github.com/TradingKnowledgeHub): a project under active development for understanding trading education videos and articles and building personal knowledge and playbooks. 持续开发中，帮助理解交易教育视频与文章，并积累个人知识和交易方法。
 
-Cross-product integration is not yet validated. The TAD preview does not represent a complete TAS release; TAD’s privacy, pricing and release terms do not extend to TAS or TKH. 跨产品集成尚未验证；TAD 测试版不代表完整 TAS 已交付，各项目的隐私、价格和发行条款分别说明。
+TAB (TradingAlpha Bot) is the shared assistant being developed for questions about TAD analysis and TKH learning materials. Selected assistant workflows and application integrations are in development and limited validation; TAB is not included in the public alpha.3 preview. The public app's local analysis runs without a model or API key. Any future AI-enabled use will require an explicit user-confirmed scope before selected data is sent to an external model; that is separate from local broker-file import. The complete cross-product TAS workflow is not yet delivered; each project's privacy, pricing and release terms are separate.
+
+TAB（TradingAlpha Bot）是面向 TAD 分析与 TKH 学习材料问答的共享助手，相关流程及局部应用接入正在开发和限定验证中，不包含在公开 alpha.3 测试包内。公开版的本机分析无需模型或 API Key。未来启用 AI 时，须由用户明确确认范围后，才将选定数据发给外部模型；这与本机券商文件导入分开。完整跨产品 TAS 流程尚未交付，各项目的隐私、价格和发行条款分别说明。
 
 ## Availability and use
 
